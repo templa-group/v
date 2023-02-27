@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Grupo Templa - Cargando...</title>
+
+    <!-- Github Pages -->
+    <base href="/v/"/>
+
+    <!-- Bootstrap 5 -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="_content/Havit.Blazor.Components.Web.Bootstrap/defaults.css" rel="stylesheet"/>
+
+    <!-- Canvas -->
+    <script src="_content/Blazor.Extensions.Canvas/blazor.extensions.canvas.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="js/c36f04a5ad.js" crossorigin="anonymous"></script>
+    
+    <!-- Site -->
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="WebApp.styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <!-- Error -->
+    <div id="blazor-error-ui">
+        Ha ocurrido un error con el servidor. Intente 
+        <a href="" class="reload">recargar</a>
+         la página. Si el error continúa contacte con el administrador del sistema.
+        <a class="dismiss">🗙</a>
+    </div>
+    
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

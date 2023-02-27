@@ -1,1 +1,0 @@
-# Templa Group Web Application
