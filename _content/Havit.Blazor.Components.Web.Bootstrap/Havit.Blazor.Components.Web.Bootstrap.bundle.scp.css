@@ -1,10 +1,10 @@
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Buttons/HxButton.razor.rz.scp.css */
 [b-np76lu746f] .hx-button-icon-text-spacer {
-    margin-right: var(--hx-button-space-between-text-icon);
+	margin-right: var(--hx-button-icon-text-spacer-width);
 }
 
 [b-np76lu746f] .hx-button-text-icon-spacer {
-    margin-left: var(--hx-button-space-between-text-icon);
+	margin-left: var(--hx-button-icon-text-spacer-width);
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Calendar/HxCalendar.razor.rz.scp.css */
 .hx-calendar[b-uq8tfob39y] {
@@ -202,12 +202,22 @@ a[b-mo5ybhq3h9] {
 	cursor: pointer;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Autosuggests/Internal/HxAutosuggestInputInternal.razor.rz.scp.css */
-.hx-autosuggest[b-ygo8zo3ada] {
-    padding-right: 2.5rem;
+.hx-autosuggest-input[b-ygo8zo3ada] {
+    position: relative;
+}
+
+/* Unfocused input z-index: 4 same as Bootstrap form-controls */
+.input-group .hx-autosuggest-input.is-invalid:not(:focus)[b-ygo8zo3ada] {
+    z-index: 4;
+}
+
+/* Bring the "active" form control to the top of surrounding elements */
+.input-group .hx-autosuggest-input:focus[b-ygo8zo3ada] {
+    z-index: 5;
 }
 
 .form-control.is-invalid[b-ygo8zo3ada] {
-    background-position: center right 2.25rem;
+    background-position: center right 2.5rem;
     padding-right: 4.125rem;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Autosuggests/Internal/HxAutosuggestInternal.razor.rz.scp.css */
@@ -219,6 +229,24 @@ a[b-mo5ybhq3h9] {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    z-index: 5;
+}
+
+.input-group .hx-autosuggest-input-wrapper[b-k26x0s28yy] {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.input-group .hx-autosuggest-input-wrapper:not(:first-child)[b-k26x0s28yy]  .hx-autosuggest-input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group .hx-autosuggest-input-wrapper:not(:last-child)[b-k26x0s28yy]  .hx-autosuggest-input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .form-control-sm ~ .hx-autosuggest-input-icon[b-k26x0s28yy] {
@@ -231,6 +259,10 @@ a[b-mo5ybhq3h9] {
 
 [b-k26x0s28yy] .hx-autosuggest-item-focused {
     background-color: var(--hx-autosuggest-item-highlighted-background-color);
+}
+
+[b-k26x0s28yy] .form-floating > label {
+    z-index: 20;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Autosuggests/Internal/HxAutosuggestItemsInternal.razor.rz.scp.css */
 [b-p8clx0pmvn] .hx-autosuggest-items-item-highlighted:not(:active):not(:focus) {

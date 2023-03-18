@@ -1,55 +1,7 @@
-/*function takeScreenshot(id) {
-    //var img = "";
-
-    //await html2canvas(document.querySelector("#" + id)).then(canvas => img = canvas.toDataURL("image/png"));
-
-    const d = document.createElement("a");
-    d.href = document.getElementById(id).toDataUrl('image/png');
-    d.download = "image.png";
-    d.click();
-}*/
-async function takeScreenshot(id){
-    var img = "[".concat("_bl_").concat(id).concat('=""]');
-    //await html2canvas(document.querySelector("#" + id)).then(canvas => img = canvas.toDataURL("image/png"));
-    console.log(img)
-    let downloadLink = document.createElement('a');
-    downloadLink.setAttribute('download', 'CanvasAsImage.png');
-    let canvas = document.querySelectorAll(img);
-    console.log(canvas)
-    let dataURL = canvas[0].toDataURL('image/png');
-    let url = dataURL.replace(/^data:image\/png/,'data:application/octet-stream');
-    downloadLink.setAttribute('href', url);
-    downloadLink.click();
-
-    await DotNet.invokeMethodAsync('WebApp','JStoCSCall', dataURL);
-
-    /*  const d = document.createElement("a");
-     d.href = document.getElementById(id).toDataUrl('image/png');
-    
-    
-    d.download = "image.png";
-    d.click();*/
-}
-
 // noinspection JSUnusedGlobalSymbols
-function printSystem(id) {
-    let img = "[".concat("_bl_").concat(id).concat('=""]');
-    //await html2canvas(document.querySelector("#" + id)).then(canvas => img = canvas.toDataURL("image/png"));
-    console.log(img)
-
-    let downloadLink = document.createElement('a');
-    downloadLink.setAttribute('download', 'CanvasAsImage.png');
-    let canvas = document.querySelectorAll(img);
-    console.log(canvas)
-    let dataURL = canvas[0].toDataURL('image/png');
-    let url = dataURL.replace(/^data:image\/png/,'data:application/octet-stream');
-    downloadLink.setAttribute('href', url);
-    downloadLink.click();
-
-    /*  const d = document.createElement("a");
-      d.href = document.getElementById(id).toDataUrl('image/png');
-      d.download = "image.png";
-      d.click();*/
+function toBase64(id) {
+    let canvas = document.querySelectorAll("[".concat("_bl_").concat(id).concat('=""]'));
+    return canvas[0].toDataURL('image/png').replace(/^data:image\/png;base64,/, '');
 }
 
 // Culture
