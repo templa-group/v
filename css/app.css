@@ -88,6 +88,13 @@ a, .btn-link {
     color: var(--bs-danger);
 }
 
+.btn-wrap-text {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+}
+
 #blazor-error-ui {
     background: var(--bs-warning);
     bottom: 0;
