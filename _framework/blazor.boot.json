@@ -182,7 +182,7 @@
       "System.Xml.Linq.dll": "sha256-MjseVjYK\/\/uv2op5cXvx9msSsZ5USzCQlb0c1BnBleg=",
       "System.Xml.ReaderWriter.dll": "sha256-+cM8a6oQ+MJyvMDQfnwkNIqicts9P+PICSBPZnhlD28=",
       "System.Xml.XDocument.dll": "sha256-OXJzxGKdQfgfYzIvq61+CcG5DR\/4hWU5XlTSRRg59G0=",
-      "WebApp.dll": "sha256-rgMJpeHe9WaqLKWDpTKvnyVDZ4Og7ghEOUIVSqZyZW8="
+      "WebApp.dll": "sha256-dnDtJvilJf9kZEXJDAlLecGHowh0zcT0lWwCmTxNf4Q="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -209,11 +209,11 @@
       },
       "en-US": {
         "en-US\/Data.resources.dll": "sha256-7xbmeSiRg3u8CY2evUbIhQfYpek\/tVFthHIh9AlbVbI=",
-        "en-US\/WebApp.resources.dll": "sha256-CxMPbvpa32gFo9NIcAM30dtU+\/NFPoyrdCG2gdJ6CsY="
+        "en-US\/WebApp.resources.dll": "sha256-g7S5mlVj3\/X0FKi3eqgLaVjZLAnUgGj7i9dArH4REmU="
       },
       "es-MX": {
         "es-MX\/Data.resources.dll": "sha256-WBEuLnDQOO+WxpYelXsw4y+HW5eT8Znz\/CLyYucOozU=",
-        "es-MX\/WebApp.resources.dll": "sha256-jEejLe9VmMhD0NDTerfpk5EM4P2V7tlc3jBjenpDZXo="
+        "es-MX\/WebApp.resources.dll": "sha256-VagRe24J79ZDejNFdv7ULlJRUmbcquOJq4ntEGr1Dps="
       },
       "zh-CN": {
         "zh-CN\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-BWNBBj8I4huSrflNYcLYqhDmcFI2k1IVoOU\/E1nLfwo="
