@@ -114,7 +114,7 @@
       "System.ComponentModel.dll": "sha256-btqatMrsfHuC\/bYU\/cdL\/+7tQdAiwwdulOc48U9VmTM=",
       "System.ComponentModel.Primitives.dll": "sha256-hrtRvpuebhG+e7XCv+ef0RJyWB5Ln6r5S8zfm99K8hg=",
       "System.ComponentModel.TypeConverter.dll": "sha256-9xcnabaAuNqT61xkDlnEaE3H0Ycqbo0PW5\/jIECD6+s=",
-      "System.Console.dll": "sha256-7pv6uvcmMHafFcBP05bJ5H3nO9vac1N9j8hp6inZDEs=",
+      "System.Console.dll": "sha256-hztJnOt28Zcp1J4pNvwoiBtCFzPXMYPCdBRvclyU6Oo=",
       "System.Data.Common.dll": "sha256-LEMvHRsI8rApsYRdVJ\/O9bkNZ3WGwf2BCrqNLIdrA5E=",
       "System.Diagnostics.Debug.dll": "sha256-MYbCuLCF2vknTD42NP7VGtl+nptY1YjKin3giihB\/FI=",
       "System.Diagnostics.DiagnosticSource.dll": "sha256-3ILbIJg2xRoWkJHb4p5P2zoXXOYx9kD1YY2Ayuka\/5A=",
@@ -182,7 +182,7 @@
       "System.Xml.Linq.dll": "sha256-MjseVjYK\/\/uv2op5cXvx9msSsZ5USzCQlb0c1BnBleg=",
       "System.Xml.ReaderWriter.dll": "sha256-+cM8a6oQ+MJyvMDQfnwkNIqicts9P+PICSBPZnhlD28=",
       "System.Xml.XDocument.dll": "sha256-OXJzxGKdQfgfYzIvq61+CcG5DR\/4hWU5XlTSRRg59G0=",
-      "WebApp.dll": "sha256-0uP4Ag11QGv7GfGtzX+JMpOAJDMGyYI3lHFstzJ2d5A="
+      "WebApp.dll": "sha256-xj\/6ewllidROqoa2Pu6xyj0ZAc7vqtHqhHed8CfY0eA="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -209,11 +209,11 @@
       },
       "en-US": {
         "en-US\/Data.resources.dll": "sha256-7xbmeSiRg3u8CY2evUbIhQfYpek\/tVFthHIh9AlbVbI=",
-        "en-US\/WebApp.resources.dll": "sha256-9es0vdaHTddv6V\/XN5LAxFN4ia0vuMShjEnqgjXx00g="
+        "en-US\/WebApp.resources.dll": "sha256-CxMPbvpa32gFo9NIcAM30dtU+\/NFPoyrdCG2gdJ6CsY="
       },
       "es-MX": {
         "es-MX\/Data.resources.dll": "sha256-WBEuLnDQOO+WxpYelXsw4y+HW5eT8Znz\/CLyYucOozU=",
-        "es-MX\/WebApp.resources.dll": "sha256-xmqB7VppcEdJ7eyKWHGWdpYN88of3wg3zkSGyZCuHBk="
+        "es-MX\/WebApp.resources.dll": "sha256-jEejLe9VmMhD0NDTerfpk5EM4P2V7tlc3jBjenpDZXo="
       },
       "zh-CN": {
         "zh-CN\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-BWNBBj8I4huSrflNYcLYqhDmcFI2k1IVoOU\/E1nLfwo="
