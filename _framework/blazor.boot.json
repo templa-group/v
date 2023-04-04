@@ -114,7 +114,7 @@
       "System.ComponentModel.dll": "sha256-btqatMrsfHuC\/bYU\/cdL\/+7tQdAiwwdulOc48U9VmTM=",
       "System.ComponentModel.Primitives.dll": "sha256-hrtRvpuebhG+e7XCv+ef0RJyWB5Ln6r5S8zfm99K8hg=",
       "System.ComponentModel.TypeConverter.dll": "sha256-9xcnabaAuNqT61xkDlnEaE3H0Ycqbo0PW5\/jIECD6+s=",
-      "System.Console.dll": "sha256-hztJnOt28Zcp1J4pNvwoiBtCFzPXMYPCdBRvclyU6Oo=",
+      "System.Console.dll": "sha256-McrGG9XWarTzHr3EO8FNmsUVIxnyLFxP2tC2qHGGbUw=",
       "System.Data.Common.dll": "sha256-LEMvHRsI8rApsYRdVJ\/O9bkNZ3WGwf2BCrqNLIdrA5E=",
       "System.Diagnostics.Debug.dll": "sha256-MYbCuLCF2vknTD42NP7VGtl+nptY1YjKin3giihB\/FI=",
       "System.Diagnostics.DiagnosticSource.dll": "sha256-3ILbIJg2xRoWkJHb4p5P2zoXXOYx9kD1YY2Ayuka\/5A=",
@@ -146,7 +146,7 @@
       "System.Net.WebHeaderCollection.dll": "sha256-mUbxE3kzUsLpJlIiLtFQ32T29iW5haXmwFg3tLFWM4M=",
       "System.Net.WebSockets.dll": "sha256-lRTU93paq3+i9ORFa+CPUwPun7TD3gK1C1rUoGzJgqw=",
       "System.ObjectModel.dll": "sha256-spy9Aq2kK8\/4uQjJ9xOxt20tNBF9GB3Hdfw3IDlG0P4=",
-      "System.Private.CoreLib.dll": "sha256-V9K7XMcpaGZdctKUbIx6Ng6BcI7KF21x6BL4m8LjFfc=",
+      "System.Private.CoreLib.dll": "sha256-2v3acJVZNBt6EATnaxJxw1KQX+K1M+7u4x4dlAIxevk=",
       "System.Private.Uri.dll": "sha256-erI1DLBodmWNHDxC3aaW9Lj1dKkc+qjoOwV\/wQA+9YQ=",
       "System.Private.Xml.dll": "sha256-U51aG72iPAQGoDpiA\/2kvprUtBAd\/ZOe4+RQS4OxzVA=",
       "System.Private.Xml.Linq.dll": "sha256-ga24dPTm8kfsAsGMFllvXCIfCF9NGkh4DXIdKYUEoS4=",
@@ -182,7 +182,7 @@
       "System.Xml.Linq.dll": "sha256-MjseVjYK\/\/uv2op5cXvx9msSsZ5USzCQlb0c1BnBleg=",
       "System.Xml.ReaderWriter.dll": "sha256-+cM8a6oQ+MJyvMDQfnwkNIqicts9P+PICSBPZnhlD28=",
       "System.Xml.XDocument.dll": "sha256-OXJzxGKdQfgfYzIvq61+CcG5DR\/4hWU5XlTSRRg59G0=",
-      "WebApp.dll": "sha256-0BDhD\/dN6DIDko39N1pklCeyE498Y57oh4g4bKQbySI="
+      "WebApp.dll": "sha256-oeULQ7PVlLhY+uyDVyEHa36TRsLTtSAfPqEN8\/sDpX0="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -209,11 +209,11 @@
       },
       "en-US": {
         "en-US\/Data.resources.dll": "sha256-Aoy2kkImoniWOA1nzjwYF7PDEdzCUqk2px0yjIPbVo4=",
-        "en-US\/WebApp.resources.dll": "sha256-7ctvteJyWXSbGJO2TjoOCj\/YyJ3GWr1A7zXTF+r3NFs="
+        "en-US\/WebApp.resources.dll": "sha256-nOZP5VryZWJ4uQvLxGpSZwlvcdNGUJz6VyZswrdIMuE="
       },
       "es-MX": {
         "es-MX\/Data.resources.dll": "sha256-Hg0GqPghlBSDrLJirefeKD8Wzu\/r5bYrUyuUesPwZi4=",
-        "es-MX\/WebApp.resources.dll": "sha256-tdiT7Cn+z3suMK2KOnI+X8Blc\/bPx5QVv14Z8hSOjFM="
+        "es-MX\/WebApp.resources.dll": "sha256-RORflVPZLPn0uUEzlMT\/YciCY42mECaUgsL3wvbU9gk="
       },
       "zh-CN": {
         "zh-CN\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-02pN\/FDYvjXgPiIgSqM1sa3WySHRD0I1i6Ml+aBKsOk="
