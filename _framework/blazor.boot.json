@@ -40,8 +40,8 @@
       "Grpc.Core.Api.dll": "sha256-ekKf1T5eFMr+juS9cg+xMnSqKO1l2sptWfhkDSpMPsk=",
       "Grpc.Net.Client.dll": "sha256-VcBmXGdOaxoBtnrvZqeh7hNr2J+i1ws407kZM8y+n6Q=",
       "Grpc.Net.Common.dll": "sha256-O1cTKVNxtYcS70\/MGh72\/8TPOZUC7iFKEuN2EH3dYjs=",
-      "Havit.Blazor.Components.Web.Bootstrap.dll": "sha256-E6mPko9Z4bggdNhSlo8hJwrz2EYmdZbP+DtisORJd5A=",
-      "Havit.Blazor.Components.Web.dll": "sha256-W4yU0VnovCRV9xU9LKxvjtnHw2tAjbb4k8cFu2OeeZA=",
+      "Havit.Blazor.Components.Web.Bootstrap.dll": "sha256-mZu+Dh9+85V8kj4xb+6uDwU0N3gk088tSdJZLdybbxI=",
+      "Havit.Blazor.Components.Web.dll": "sha256-ASs09DCIkB+ay1DRJXfANVcgUlnKZktffkLc\/yusSDU=",
       "Havit.Core.dll": "sha256-qn6C8CCO76CvuICCjVcQPLYMiUufgb\/lfjgJlbJD7aQ=",
       "itext.barcodes.dll": "sha256-2ZHBmEpZ6N+t\/yuM3ePWVP5585831Dt+mBGi5qCAfuU=",
       "itext.commons.dll": "sha256-C9Za3uNjmaaAzApu4fXnmzJgEQ+tNoF4t5C9\/1sHhSs=",
@@ -182,7 +182,7 @@
       "System.Xml.Linq.dll": "sha256-MjseVjYK\/\/uv2op5cXvx9msSsZ5USzCQlb0c1BnBleg=",
       "System.Xml.ReaderWriter.dll": "sha256-+cM8a6oQ+MJyvMDQfnwkNIqicts9P+PICSBPZnhlD28=",
       "System.Xml.XDocument.dll": "sha256-OXJzxGKdQfgfYzIvq61+CcG5DR\/4hWU5XlTSRRg59G0=",
-      "WebApp.dll": "sha256-oeULQ7PVlLhY+uyDVyEHa36TRsLTtSAfPqEN8\/sDpX0="
+      "WebApp.dll": "sha256-r\/iH0uRav\/Srze1ytkYBggN2C3dBEWdrkvJ8DxepGEU="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -205,7 +205,7 @@
     },
     "satelliteResources": {
       "cs": {
-        "cs\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-Jz1p5rFNstAX6oI0CZNpRSLT+cyahAmoaRlZjD5sjho="
+        "cs\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-tLLityev9q40gOyQ7OygMC5JeZmjEt73yLjA941wywQ="
       },
       "en-US": {
         "en-US\/Data.resources.dll": "sha256-Aoy2kkImoniWOA1nzjwYF7PDEdzCUqk2px0yjIPbVo4=",
@@ -216,7 +216,7 @@
         "es-MX\/WebApp.resources.dll": "sha256-RORflVPZLPn0uUEzlMT\/YciCY42mECaUgsL3wvbU9gk="
       },
       "zh-CN": {
-        "zh-CN\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-02pN\/FDYvjXgPiIgSqM1sa3WySHRD0I1i6Ml+aBKsOk="
+        "zh-CN\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-jytX3tgzk4sh\/M\/USZYVDCu3\/uP2wYo+TfY7v9ARmWM="
       }
     }
   }
