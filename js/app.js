@@ -15,3 +15,12 @@ async function ChangeProcess(proc){
     proc = document.getElementById(proc).autofocus;
     input.addEventListener('change', updateValue);
 }
+
+window.saveAsFile = (fileName, content) => {
+    const blob = new Blob([content], { type: 'application/pdf' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = fileName;
+    link.click();
+    URL.revokeObjectURL(link.href);
+};

@@ -1,3 +1,21 @@
 @import '_content/Blazored.Toast/Blazored.Toast.bundle.scp.css';
 @import '_content/Havit.Blazor.Components.Web.Bootstrap/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css';
 
+/* /Shared/GridTemplates/GridSearchBox.razor.rz.scp.css */
+.grid-search-box-input-icon[b-sa5apaeme5] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.grid-search-box-input-icon-end[b-sa5apaeme5] {
+    right: .75rem;
+}
+
+.grid-search-box-input-with-search-icon[b-sa5apaeme5] {
+    border-top-right-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+}

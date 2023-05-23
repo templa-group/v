@@ -289,6 +289,9 @@ a[b-mo5ybhq3h9] {
 	top: 50%;
 	right: 0;
 	transform: translateY(-50%);
+}
+
+.hx-input-date:has(input:not(:disabled)) + .hx-input-date-icon[b-vy6vrzeamt] {
 	cursor: pointer;
 }
 
