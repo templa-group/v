@@ -10,9 +10,13 @@ html, body {
 
 /*noinspection CssUnknownTarget*/
 body {
-    background-size: cover;
-    background: #d9eff6 url("/v/img/background.png") no-repeat fixed center;
+    /*background-size: cover;
+    background: #d9eff6 url("/v/img/background.png") no-repeat fixed center;*/
     margin: 0;
+}
+
+.table-min-height {
+    min-height: 150px;
 }
 
 .loading-progress {
@@ -95,8 +99,37 @@ a, .btn-link {
     text-overflow: ellipsis;
 }
 
+.fill-none {
+    fill: transparent;
+}
+.fill-primary {
+    fill: var(--bs-primary);
+}
+.fill-secondary {
+    fill: var(--bs-secondary);
+}
+.fill-dark {
+    fill: var(--bs-dark);
+}
+.fill.light {
+    fill: var(--bs-light);
+}
+.fill-success {
+    fill: var(--bs-success);
+}
+.fill-danger {
+    fill: var(--bs-danger);
+}
+.fill-warning {
+    fill: var(--bs-warning);
+}
+.fill-info {
+    fill: var(--bs-info);
+}
+
 #blazor-error-ui {
     background: var(--bs-warning);
+    color: var(--bs-black);
     bottom: 0;
     box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
     display: none;
@@ -107,7 +140,12 @@ a, .btn-link {
     z-index: 2000;
 }
 
+#blazor-error-ui .reload {
+    color: var(--bs-danger);
+}
+
 #blazor-error-ui .dismiss {
+    color: var(--bs-danger);
     cursor: pointer;
     position: absolute;
     right: 0.75rem;

@@ -10,6 +10,15 @@ window.cultureInfo = {
     set: (value) => window.localStorage['AppCulture'] = value
 };
 
+// Theme
+window.setColorMode = (colorMode) => {
+    if (colorMode === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-bs-theme', 'dark')
+    } else {
+        document.documentElement.setAttribute('data-bs-theme', colorMode)
+    }
+}
+
 async function ChangeProcess(proc){
     console.log("si entramos a chengeproces")
     proc = document.getElementById(proc).autofocus;
