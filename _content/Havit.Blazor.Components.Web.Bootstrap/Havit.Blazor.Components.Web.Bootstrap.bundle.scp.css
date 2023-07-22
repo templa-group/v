@@ -988,7 +988,7 @@ input:focus[b-gb1jfrh5wb] {
 }
 
 .hx-input-tags-control-disabled:not(.hx-input-tags-naked)[b-gb1jfrh5wb] {
-	background-color: var(--bs-form-control-disabled-bg);
+	background-color: var(--bs-secondary-bg);
 }
 
 .hx-tag-add-button-text[b-gb1jfrh5wb] {

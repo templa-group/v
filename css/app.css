@@ -166,8 +166,13 @@ canvas {
 #canvas-container-no-card {
     width: 100%;
     height: auto;
-    border: 1px solid rgba(0, 0, 0, 0.0375);
-    border-radius: calc(0.5rem - 1px);
+    border-width: var(--bs-border-width);
+    border-color: var(--bs-border-color-translucent);
+    border-style: solid;
+    margin: auto;
+    padding: 0.25rem;
+    border-radius: var(--bs-border-radius);
+    background-color: white;
 }
 
 #canvas-container-offcanvas {
