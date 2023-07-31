@@ -422,85 +422,54 @@ canvas {
 }
 
 /*Process*/
-.high-priority-border {
-    border: var(--bs-card-border-width) solid #D50000;
+.high-process {
+    background-color: var(--bs-danger);
+    color: var(--bs-white);
 }
 
-.high-priority-background {
-    background-color: #D50000;
-    color: #FFFFFF;
+.cut-process {
+    background-color: #00CED1;
+    color: var(--bs-black);
 }
 
-.cut-border {
-    border: var(--bs-card-border-width) solid #90CAF9;
+.flatedge-process {
+    background-color: #FF6F61;
+    color: var(--bs-black);
 }
 
-.cut-background {
-    background-color: #90CAF9;
+.beveledge-process {
+    background-color: #E6E6FA;
+    color: var(--bs-black);
 }
 
-.flat-edge-border {
-    border: var(--bs-card-border-width) solid #82B1FF;
+.process-process {
+    background-color: #DAA520;
+    color: var(--bs-black);
 }
 
-.flat-edge-background {
-    background-color: #82B1FF;
+.tempered-process {
+    background-color: #DA70D6;
+    color: var(--bs-black);
 }
 
-.bevel-edge-border {
-    border: var(--bs-card-border-width) solid #42A5F5;
+.laminate-process {
+    background-color: #6A5ACD;
+    color: var(--bs-white);
 }
 
-.bevel-edge-background {
-    background-color: #42A5F5;
+.duovent-process {
+    background-color: #228B22;
+    color: var(--bs-black);
 }
 
-.process-border {
-    border: var(--bs-card-border-width) solid #81D4FA;
+.frostedglass-process {
+    background-color: #4682B4;
+    color: var(--bs-black);
 }
 
-.process-background {
-    background-color: #81D4FA;
-}
-
-.tempered-border {
-    border: var(--bs-card-border-width) solid #00B0FF;
-}
-
-.tempered-background {
-    background-color: #00B0FF;
-}
-
-.laminate-tempered-border {
-    border: var(--bs-card-border-width) solid #039BE5;
-}
-
-.laminate-tempered-background {
-    background-color: #039BE5;
-}
-
-.duovent-tempered-border {
-    border: var(--bs-card-border-width) solid #80DEEA;
-}
-
-.duovent-tempered-background {
-    background-color: #80DEEA;
-}
-
-.frosted-glass-border {
-    border: var(--bs-card-border-width) solid #00B8D4;
-}
-
-.frosted-glass-background {
-    background-color: #00B8D4;
-}
-
-.delivery-border {
-    border: var(--bs-card-border-width) solid #4DB6AC;
-}
-
-.delivery-background {
-    background-color: #4DB6AC;
+.delivery-process {
+    background-color: #FF6347;
+    color: var(--bs-white);
 }
 
 .warning-border {

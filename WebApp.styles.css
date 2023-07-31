@@ -1,5 +1,115 @@
 @import '_content/Havit.Blazor.Components.Web.Bootstrap/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css';
 
+/* /Shared/Animations/BarcodeAnim.razor.rz.scp.css */
+.barcode-container[b-brfrusidcv] {
+    width: 240px;
+    height: 120px;
+    margin: 10px auto;
+    padding-top: 10px;
+    border-radius: var(--bs-border-radius);
+    background-color: white;
+}
+
+.center[b-brfrusidcv] {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Barcode anim container */
+.anim-box[b-brfrusidcv] {
+    position: relative;
+    width: 220px;
+    height: 100px;
+    padding: 25px 30px;
+    transition: transform .6s ease-out;
+    animation-play-state: running;
+}
+
+/* adds the 4 corners */
+.anim-box[b-brfrusidcv]:before, .anim-box[b-brfrusidcv]:after, .anim-box>:first-child[b-brfrusidcv]:before, .anim-box>:first-child[b-brfrusidcv]:after {
+    position: absolute;
+    width: 10%; height: 15%;
+    border-color: var(--bs-black);
+    border-style: solid;
+    content: ' ';
+}
+
+/* top left corner */
+.anim-box[b-brfrusidcv]:before {
+    top: 0; left: 0;
+    border-width: 2px 0 0 2px;
+}
+
+/* top right corner */
+.anim-box[b-brfrusidcv]:after {
+    top: 0; right: 0;
+    border-width: 2px 2px 0 0;
+}
+
+/* bottom right corner */
+.anim-box>:first-child[b-brfrusidcv]:before {
+    bottom: 0; right: 0;
+    border-width: 0 2px 2px 0;
+}
+
+/* bottom left corner */
+.anim-box>:first-child[b-brfrusidcv]:after {
+    bottom: 0; left: 0;
+    border-width: 0 0 2px 2px;
+}
+
+/* barcode bars */
+.anim-item[b-brfrusidcv] {
+    display: inline-block;
+    background-color: var(--bs-black);
+    height: 50px;
+}
+
+.anim-item-sm[b-brfrusidcv] {
+    width: 2px;
+    margin-right: 1px;
+}
+
+.anim-item-md[b-brfrusidcv] {
+    width: 3px;
+    margin-right: 1px;
+}
+
+.anim-item-lg[b-brfrusidcv] {
+    width: 5px;
+    margin-right: 1px;
+}
+
+/* animated laser beam */
+.scanner[b-brfrusidcv] {
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    opacity: 0.7;
+    position:relative;
+    box-shadow: 0 0 8px 10px rgba(170, 11, 23, 0.49);
+    top:50%;
+    animation-name: scan-b-brfrusidcv;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes scan-b-brfrusidcv {
+    0% {
+        box-shadow: 0 0 8px 10px rgba(170, 11, 23, 0.49);
+        top: 50%;
+    }
+    25% {
+        box-shadow: 0 6px 8px 10px rgba(170, 11, 23, 0.49);
+        top: 5px;
+    }
+    75% {
+        box-shadow: 0 -6px 8px 10px rgba(170, 11, 23, 0.49);
+        top: 98%;
+    }
+}
 /* /Shared/GridTemplates/GridSearchBox.razor.rz.scp.css */
 .grid-search-box-input-icon[b-sa5apaeme5] {
     position: absolute;
