@@ -497,10 +497,6 @@ button.dropdown-item[b-kjzuko47a2],
     color: var(--hx-grid-sorted-icon-color);
 }
 
-.hx-grid-sortable[b-693m69k5v1] {
-    color: currentColor;
-}
-
 .hx-grid-sortable[b-693m69k5v1]  .hx-grid-sort-icon {
     visibility: hidden;
 }
@@ -536,10 +532,10 @@ th.hx-grid-sorted.text-end .hx-grid-header-cell-template[b-693m69k5v1] {
 }
 
 [b-693m69k5v1] .hx-grid-btn:hover {
-    background: var(--hx-grid-button-hover-background); 
+    background: var(--hx-grid-button-hover-background);
 }
 
-[b-693m69k5v1] .hx-grid-btn:active { 
+[b-693m69k5v1] .hx-grid-btn:active {
     color: currentColor;
 }
 
@@ -552,7 +548,7 @@ tr:hover[b-693m69k5v1]  .hx-context-menu {
 }
 
 [b-693m69k5v1] .hx-context-menu-grid-column {
-    padding: .325rem .5rem; 
+    padding: .325rem .5rem;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Layouts/HxListLayout.razor.rz.scp.css */
 	 [b-c4syx7uv8l] .hx-grid {
@@ -591,11 +587,11 @@ tr:hover[b-693m69k5v1]  .hx-context-menu {
 }
 
 .hx-list-layout:not(:has(.hx-pager))[b-c4syx7uv8l]  .hx-grid tr:last-child td:first-child {
-	border-bottom-left-radius: var(--bs-border-radius-lg);
+	border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
 
 .hx-list-layout:not(:has(.hx-pager))[b-c4syx7uv8l]  .hx-grid tr:last-child td:last-child {
-	border-bottom-right-radius: var(--bs-border-radius-lg);
+	border-bottom-right-radius: var(--bs-card-inner-border-radius);
 }
 
 .hx-list-layout:not(:has(.hx-pager))[b-c4syx7uv8l]  .hx-grid tr:last-child td {
