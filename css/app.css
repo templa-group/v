@@ -1,6 +1,7 @@
 /* Root */
 :root {
     --hx-sidebar-width: 320px;
+    /*--hx-sidebar-background-color: var(--bs-body-bg)*/ /* Default body color */
 }
 
 /* HTML, Body */
@@ -8,33 +9,44 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/*noinspection CssUnknownTarget*/
-body {
-    /*background-size: cover;
-    background: #d9eff6 url("/v/img/background.png") no-repeat fixed center;*/
-    margin: 0;
+#app {
+    position: relative;
+    min-height: 100vh;
 }
 
-.table-min-height {
-    min-height: 150px;
+/*noinspection CssUnknownTarget*/
+#app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/v/img/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.05;
 }
 
 .loading-progress {
-    position: relative;
+    position: absolute;
+    top: 20vh;
+    left: calc((100vw / 2) - 4rem);
     display: block;
     width: 8rem;
     height: 8rem;
-    margin: 20vh auto 1rem auto;
 }
 
 .loading-progress circle {
     fill: none;
-    stroke: #e0e0e0;
+    stroke: var(--bs-secondary);
     stroke-width: 0.6rem;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
 }
 
+/*noinspection CssUnresolvedCustomProperty*/
 .loading-progress circle:last-child {
     stroke: var(--bs-primary);
     stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
@@ -43,11 +55,14 @@ body {
 
 .loading-progress-text {
     position: absolute;
+    top: calc(20vh + 3.3rem);
+    left: calc((100vw / 2) - 4rem);
+    width: 8rem;
     text-align: center;
     font-weight: bold;
-    inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
 }
 
+/*noinspection CssUnresolvedCustomProperty*/
 .loading-progress-text:after {
     content: var(--blazor-load-percentage-text, "Cargando...");
 }
