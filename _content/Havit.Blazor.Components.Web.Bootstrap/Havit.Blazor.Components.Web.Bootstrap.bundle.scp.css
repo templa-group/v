@@ -274,23 +274,18 @@ a[b-mo5ybhq3h9] {
 .hx-autosuggest-input-icon div[role="button"]:not(:hover)[b-k26x0s28yy]  .hx-icon {
     opacity: var(--hx-autosuggest-input-close-icon-opacity);
 }
-
-[b-k26x0s28yy] .hx-autosuggest-item-focused {
-    background-color: var(--hx-autosuggest-item-highlighted-background-color);
-}
-
 [b-k26x0s28yy] .form-floating > label {
     z-index: 20;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Autosuggests/Internal/HxAutosuggestItemsInternal.razor.rz.scp.css */
-[b-p8clx0pmvn] .hx-autosuggest-items-item-highlighted:not(:active):not(:focus) {
-    background-color: var(--hx-autosuggest-item-highlighted-background-color);
-}
-
 .dropdown-menu[b-p8clx0pmvn] {
     width: var(--hx-autosuggest-dropdown-menu-width);
     overflow: auto;
     max-height: var(--hx-autosuggest-dropdown-menu-height);
+}
+
+[b-p8clx0pmvn] .hx-autosuggest-item-focused:not(:active):not(:focus) {
+    background-color: var(--hx-autosuggest-item-highlighted-background-color);
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/HxValidationMessage.razor.rz.scp.css */
 [b-sq8mx7uk7p] .feedback-floating {
