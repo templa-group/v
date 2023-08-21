@@ -436,6 +436,36 @@ canvas {
     height: 48px;
 }
 
+#canvas-bar_small_t_t {
+    width: 900px;
+    height: 48px;
+}
+
+#canvas-bar_small_t_q {
+    width: 1200px;
+    height: 48px;
+}
+
+#canvas-bar_small_l_rotated_double {
+    width: 600px;
+    height: 261px;
+}
+
+#canvas-bar_small_r_rotated_double {
+    width: 600px;
+    height: 261px;
+}
+
+#canvas-bar_regular_h_rotated {
+    width: 48px;
+    height: 516px;
+}
+
+#canvas-bar_regular_v_rotated {
+    width: 1016px;
+    height: 48px;
+}
+
 /*Process*/
 .high-process {
     background-color: var(--bs-danger);
