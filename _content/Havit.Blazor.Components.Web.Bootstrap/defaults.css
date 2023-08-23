@@ -70,13 +70,13 @@
 	/* HxContextMenu */
 	--hx-context-menu-button-color: 								unset;
 	--hx-context-menu-button-border: 								unset;
-	--hx-context-menu-button-border-radius: 						var(--bs-border-radius);
+	--hx-context-menu-button-border-radius: 						var(--bs-border-radius-sm);
 	--hx-context-menu-button-padding: 								0 .25rem;
-	--hx-context-menu-button-hover-background: 						rgba(var(--bs-black-rgb), .1);
+	--hx-context-menu-button-hover-background: 						var(--bs-secondary-bg);
 	--hx-context-menu-item-icon-margin: 							0 .5rem 0 0;
 
 	/* HxGrid */
-	--hx-grid-button-hover-background: 								rgba(var(--bs-black-rgb), .1);
+	--hx-grid-button-hover-background: 								var(--bs-secondary-bg);
 	--hx-grid-button-border-radius: 								var(--bs-border-radius);
 	--hx-grid-sorted-icon-color: 									var(--bs-primary);
 
@@ -159,10 +159,10 @@
 	--hx-tree-view-item-hover-background-opacity: 					.1;
 	--hx-tree-view-item-selected-background: 						var(--bs-primary-rgb);
 	--hx-tree-view-item-spacer-width: 								1rem;
-	--hx-tree-view-item-icon-margin: 								0 .25rem 0 0;
 	--hx-tree-view-item-font-size: 									.75rem;
 	--hx-tree-view-item-padding: 									.25rem .5rem;
 	--hx-tree-view-item-margin: 									0 0 .125rem 0;
+	--hx-tree-view-item-gap:										.25rem;
 	--hx-tree-view-expander-container-width: 						1rem;
 
 	/* HxProgressIndicator */

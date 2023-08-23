@@ -174,8 +174,12 @@ td[role="button"] .selected.out[b-uq8tfob39y] {
     display: inline-block;
 }
 
-.hx-context-menu .dropdown[b-eznrxray2a] {
-    display: flex;
+tr .hx-context-menu[b-eznrxray2a] {
+    opacity: 0;
+}
+
+tr:hover .hx-context-menu[b-eznrxray2a] {
+    opacity: 1;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/ContextMenus/HxContextMenuItem.razor.rz.scp.css */
 a[b-mo5ybhq3h9] {
@@ -365,10 +369,6 @@ a[b-mo5ybhq3h9] {
     display: flex;
 }
 
-.form-control[b-cguxy625ss] {
-    background-clip: border-box;
-}
-
 [b-cguxy625ss] .feedback-floating {
     left: 0;
 }
@@ -389,10 +389,12 @@ a[b-mo5ybhq3h9] {
 }
 
 [b-cguxy625ss] .dropdown {
-    flex: 1 1 auto;
+    flex: 1 0 50%;
 }
 
-[b-cguxy625ss] .dropdown:focus-within {
+[b-cguxy625ss] .dropdown:focus-within,
+[b-cguxy625ss] .dropdown:has(.is-invalid),
+[b-cguxy625ss] .dropdown:has(.is-valid) {
     z-index: 6; /* Assures that the inputs' box shadows are always fully visible (rendered on top). Must be larger than 5 because otherwise the validation message is rendered on top. */
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxMultiSelectInternal.razor.rz.scp.css */
@@ -534,16 +536,8 @@ th.hx-grid-sorted.text-end .hx-grid-header-cell-template[b-693m69k5v1] {
     color: currentColor;
 }
 
-[b-693m69k5v1] .hx-context-menu {
-    opacity: 0;
-}
-
-tr:hover[b-693m69k5v1]  .hx-context-menu {
-    opacity: 1;
-}
-
 [b-693m69k5v1] .hx-context-menu-grid-column {
-    padding: .325rem .5rem;
+	vertical-align: middle;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Layouts/HxListLayout.razor.rz.scp.css */
 	 [b-c4syx7uv8l] .hx-grid {
@@ -1004,13 +998,13 @@ input:focus[b-gb1jfrh5wb] {
 	display: flex;
 	cursor: pointer;
 	align-items: center;
+	gap: var(--hx-tree-view-item-gap);
 	padding: var(--hx-tree-view-item-padding);
 	margin: var(--hx-tree-view-item-margin);
 	font-size: var(--hx-tree-view-item-font-size);
 	border-radius: var(--hx-tree-view-item-border-radius);
 	background-color: var(--hx-tree-view-item-background);
 	color: var(--hx-tree-view-item-color);
-	transition: all 0.15s ease-in-out;
 	border-width: var(--hx-tree-view-item-border-width);
 	border-color: var(--hx-tree-view-item-border-color);
 	border-style: var(--hx-tree-view-item-border-style);
@@ -1039,13 +1033,12 @@ input:focus[b-gb1jfrh5wb] {
 	flex: 1;
 }
 
-.hx-tree-view-item-icon[b-so2pyrqosf], .hx-tree-view-item-expander[b-so2pyrqosf] {
+.hx-tree-view-item-icon[b-so2pyrqosf] {
 	color: var(--hx-tree-view-item-hover-color);
-	margin: var(--hx-tree-view-item-icon-margin);
 }
 
 .hx-tree-view-item-expander[b-so2pyrqosf] {
-	transition: all 0.15s ease-in-out;
+	transition: transform 0.15s ease-in-out;
 	transform: rotate(0deg);
 }
 
@@ -1053,7 +1046,7 @@ input:focus[b-gb1jfrh5wb] {
 	transform: rotate(90deg);
 }
 
-.hx-tree-view-item-expander-container[b-so2pyrqosf] {
+[b-so2pyrqosf] .hx-tree-view-item-expander-container {
 	width: var(--hx-tree-view-expander-container-width);
 	display: flex;
 	justify-content: center;
