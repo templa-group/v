@@ -1,0 +1,160 @@
+﻿:root {
+    --theme-primary: #D04700;
+    --theme-primary-rgb: 208, 71, 0;
+    --theme-primary-light: #FF8300;
+    
+    --bs-primary: var(--theme-primary);
+    --bs-primary-rgb: var(--theme-primary-rgb);
+    --bs-primary-text-emphasis: var(--theme-primary-light);
+    --bs-link-color: var(--theme-primary);
+    --bs-link-hover-color: var(--theme-primary-light);
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--theme-primary);
+    --bs-btn-border-color: var(--theme-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--theme-primary-light);
+    --bs-btn-hover-border-color: var(--theme-primary);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--theme-primary);
+    --bs-btn-active-border-color: var(--theme-primary-light);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--theme-primary);
+    --bs-btn-disabled-border-color: var(--theme-primary);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--theme-primary);
+    --bs-btn-border-color: var(--theme-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--theme-primary);
+    --bs-btn-hover-border-color: var(--theme-primary);
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--theme-primary);
+    --bs-btn-active-border-color: var(--theme-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--theme-primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--theme-primary);
+    --bs-gradient: none;
+}
+
+.form-check-input:checked {
+    background-color: var(--theme-primary);
+    border-color: var(--theme-primary);
+}
+
+/* Background */
+#app::before {
+    /*noinspection CssUnknownTarget*/
+    background-image: url("/v/_content/TemplaGroup.Shared/img/theme/halloween.svg");
+    opacity: 0.8;
+}
+
+/* Havit components */
+.hx-pager {
+    --bs-pagination-active-bg: var(--theme-primary);
+    --bs-pagination-active-border-color: var(--theme-primary);
+    --bs-pagination-hover-color: var(--theme-primary-light);
+    --bs-pagination-color: var(--theme-primary);
+}
+
+/* Components */
+#component-template-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-15deg) translate(-20px, 10px);
+}
+
+#dialog-template-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    transform: rotate(-30deg) translate(-5px, -120px);
+}
+
+#dialog-template-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    transform: rotate(45deg) translate(0px, -50px);
+}
+
+#root-template > #spider-web {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1) translate(49px, -15px);
+}
+
+#root-template > #spider {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    z-index: 2;
+    animation: swing 2s infinite;
+    transform-origin: top;
+    transition: 1s ease-in-out;
+}
+
+html:hover #root-template > #spider {
+    top: -120%;
+}
+
+html:hover #root-template > #spiderweb-web {
+    top: -120%;
+}
+
+#sidebar-template {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    transform: translate(-25px, -25px);
+}
+
+#sidebar-template > svg {
+    -webkit-animation: up-down-animation 1s infinite alternate;
+    animation: up-down-animation 1s infinite alternate;
+}
+
+#tab-template {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Animations */
+@-webkit-keyframes up-down-animation {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+@keyframes up-down-animation {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+@keyframes swing {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
