@@ -1,11 +1,11 @@
 ﻿:root {
-    --bs-primary: #D047FF;
-    --bs-primary-rgb: 208, 71, 255;
+    /*--bs-primary: #D047FF;
+    --bs-primary-rgb: 208, 71, 255;*/
 }
 
 /* Background */
 #app::before {
     /*noinspection CssUnknownTarget*/
-    background-image: url("/v/_content/TemplaGroup.Shared/img/theme/default/background.svg");
+    background-image: url("/v/_content/TemplaGroup.Shared/img/theme/default.svg");
     opacity: 0.05;
 }

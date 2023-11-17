@@ -73,7 +73,7 @@ const barcodeHidReader = (function () {
             cancelable: true,
             bubbles: true
         })
-
+        
         event.data = barcode
         node.dispatchEvent(event)
     }
