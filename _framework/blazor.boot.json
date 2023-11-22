@@ -184,9 +184,9 @@
       "System.Xml.ReaderWriter.dll": "sha256-ICC+Wh0VJVSMswR51mRBkyNxeLzWknx3Isu8iivsrwg=",
       "System.Xml.XDocument.dll": "sha256-jPcAjluv7VGrSccXhmPxo6LA3OxZLt8L1O6P8z4tjgY=",
       "TemplaGroup.Chart.dll": "sha256-pX1s0SgDvXuNPH2ajDibq0jsGjRG2vGtBO8YekCG7jY=",
-      "TemplaGroup.Core.dll": "sha256-kvMKqn8DsiMYiMzBX354wdxAKpaQUwm\/51dwf0ynYS8=",
-      "TemplaGroup.Shared.dll": "sha256-LMuBNHHkC8BEV+dZ+DA6z\/nbR9TkS0Y+bhTSLqVn+H8=",
-      "TemplaGroup.Web.dll": "sha256-Hw7AE7r+HtbhD8GULGwWKs4HybP3ZsczM06jgf+MBD8="
+      "TemplaGroup.Core.dll": "sha256-4cKOoHgxpB9HOKKZ5RjVZPnx3iQFNjb3z+NYnDTSvFY=",
+      "TemplaGroup.Shared.dll": "sha256-jjSa5saFwMLhI4m+U+ZEPo5gOrbMXw6Z8XJuRBHpzNE=",
+      "TemplaGroup.Web.dll": "sha256-Kr3qm98exgRdRoEV7Pz2ff+nDRgbcMzsmHWFThKikls="
     },
     "extensions": null,
     "lazyAssembly": null,
