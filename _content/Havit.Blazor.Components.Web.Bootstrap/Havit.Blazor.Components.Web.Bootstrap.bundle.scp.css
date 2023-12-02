@@ -1018,6 +1018,11 @@ input:focus[b-gb1jfrh5wb] {
 [b-gb1jfrh5wb] .hx-input-tags-dropdown-item-focused {
 	background-color: var(--hx-input-tags-dropdown-item-highlighted-background-color);
 }
+
+[b-gb1jfrh5wb] .hx-tag-add-button-disabled {
+	opacity: var(--hx-input-tags-add-button-disabled-opacity);
+	cursor: default;
+}
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Toasts/HxToastContainer.razor.rz.scp.css */
 .hx-toast-container[b-s6wlosgh2n] {
 	z-index: 1080;
