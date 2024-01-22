@@ -188,9 +188,9 @@
       "System.Xml.ReaderWriter.dll": "sha256-ICC+Wh0VJVSMswR51mRBkyNxeLzWknx3Isu8iivsrwg=",
       "System.Xml.XDocument.dll": "sha256-jPcAjluv7VGrSccXhmPxo6LA3OxZLt8L1O6P8z4tjgY=",
       "TemplaGroup.Chart.dll": "sha256-Y7yO3rvOweXvblJqyeEYNxA+EwFXjyVhEMRN\/9hWP9U=",
-      "TemplaGroup.Core.dll": "sha256-\/aA4I85mJnl6tAQaVVdPqV7LE7uLbe17QfhFhRzzT7Y=",
-      "TemplaGroup.Shared.dll": "sha256-LNPiA+iaxyqmll4PmyOAAV3q+mp4yf9YCZ3zC\/d9fGI=",
-      "TemplaGroup.Web.dll": "sha256-hZcazx9JVvWy6Z9fyOhXdIJfkmxaaQGuzqtWsenEKfQ="
+      "TemplaGroup.Core.dll": "sha256-RyCboYS8QKAFk40QRBul3Lfv55vUnzjxyaILkosUFbU=",
+      "TemplaGroup.Shared.dll": "sha256-pNbXDKt+OBPrJ3\/SidS28dx03TQMZF0Goj0fcB13KTg=",
+      "TemplaGroup.Web.dll": "sha256-h+edz3YRQJA\/i7Ax2\/FdfSCiMYbe7NoBLUKMv4VdQKI="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -216,10 +216,10 @@
         "cs\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-lCuQw9lubXYw2lNDtllkDYnjR53sdq\/wpUXgPC9t05c="
       },
       "en-US": {
-        "en-US\/TemplaGroup.Core.resources.dll": "sha256-6EoYCqZDwRbJU\/yLIk1vSGrNzgUcmNZjbZKpHmmhYW0="
+        "en-US\/TemplaGroup.Core.resources.dll": "sha256-RTBKOgaL8eXF\/98WU1bgDP+Mo\/TXIQaiXSwUTrfgiKE="
       },
       "es-MX": {
-        "es-MX\/TemplaGroup.Core.resources.dll": "sha256-5j3X7eYr\/lgjMOadJJy4feN6zr44V66nqmNuLy0He6k="
+        "es-MX\/TemplaGroup.Core.resources.dll": "sha256-oJETuFnFVNszLPFEyVwxHjsp3GQMlzBVtFMgLJYW6Bw="
       },
       "it-IT": {
         "it-IT\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-3YD2p0m6ZUwSZJzqxSpljt0IV88yr6AlcGmJHBQXcUc="
