@@ -1,11 +1,12 @@
-﻿:root {
-    /*--bs-primary: #D047FF;
-    --bs-primary-rgb: 208, 71, 255;*/
+﻿/* Theme Colors */
+:root {
+    --theme-primary: #D63384;
+    --theme-primary-rgb: 214, 51, 132;
+    --theme-primary-light: #DE5C9D;
 }
 
 /* Background */
 #app::before {
     /*noinspection CssUnknownTarget*/
-    background-image: url("/v/_content/TemplaGroup.Shared/img/theme/default.svg");
-    opacity: 0.05;
+    background-image: url("/v/_content/TemplaGroup.Shared/img/theme/default/background.webp");
 }

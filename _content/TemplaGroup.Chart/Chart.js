@@ -62,7 +62,7 @@ export function chartSetup(id, dotnetConfig, jsonConfig) {
                 dIndex = ctx.dataIndex;
                 vl = chart.data.datasets[dsIndex].data[dIndex];
             }
-            return DotNet.invokeMethod('Chart', 'TooltipCallbacksLabel', dotnetConfig, [dsIndex, dIndex, vl]);
+            return DotNet.invokeMethod('TemplaGroup.Chart', 'TooltipCallbacksLabel', dotnetConfig, [dsIndex, dIndex, vl]);
         };
     }
 
@@ -77,7 +77,7 @@ export function chartSetup(id, dotnetConfig, jsonConfig) {
                 dIndex = ctx[0].dataIndex;
                 vl = chart.data.datasets[dsIndex].data[dIndex];
             }
-            return DotNet.invokeMethod('Chart', 'TitleCallbacks', dotnetConfig, [dsIndex, dIndex, vl]);
+            return DotNet.invokeMethod('TemplaGroup.Chart', 'TitleCallbacks', dotnetConfig, [dsIndex, dIndex, vl]);
         };
     }
 
@@ -100,7 +100,7 @@ export function chartSetup(id, dotnetConfig, jsonConfig) {
                 DataY: dataY
             };
 
-            return DotNet.invokeMethodAsync('Chart', 'OnHoverAsync', dotnetConfig, rtn);
+            return DotNet.invokeMethodAsync('TemplaGroup.Chart', 'OnHoverAsync', dotnetConfig, rtn);
         };
     }
 
@@ -177,7 +177,7 @@ export function chartSetup(id, dotnetConfig, jsonConfig) {
                 Value: vl
             };
 
-            DotNet.invokeMethodAsync('Chart', 'OnClickAsync', dotnetConfig, rtn);
+            DotNet.invokeMethodAsync('TemplaGroup.Chart', 'OnClickAsync', dotnetConfig, rtn);
         }
     };
 
@@ -187,7 +187,7 @@ export function chartSetup(id, dotnetConfig, jsonConfig) {
             LegendText: legendItem.text
         };
 
-        DotNet.invokeMethodAsync('Chart', 'OnLegendClickAsync', dotnetConfig, rtn);
+        DotNet.invokeMethodAsync('TemplaGroup.Chart', 'OnLegendClickAsync', dotnetConfig, rtn);
     };
 }
 

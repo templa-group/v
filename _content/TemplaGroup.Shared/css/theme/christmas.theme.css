@@ -1,52 +1,8 @@
+/* Theme Colors */
 :root {
     --theme-primary: #356d17;
     --theme-primary-rgb: 53, 109, 23;
     --theme-primary-light: #3D8A13;
-
-    --bs-primary: var(--theme-primary);
-    --bs-primary-rgb: var(--theme-primary-rgb);
-    --bs-primary-text-emphasis: var(--theme-primary-light);
-    --bs-link-color: var(--theme-primary);
-    --bs-link-hover-color: var(--theme-primary-light);
-}
-
-.btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: var(--theme-primary);
-    --bs-btn-border-color: var(--theme-primary);
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: var(--theme-primary-light);
-    --bs-btn-hover-border-color: var(--theme-primary);
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: var(--theme-primary);
-    --bs-btn-active-border-color: var(--theme-primary-light);
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: var(--theme-primary);
-    --bs-btn-disabled-border-color: var(--theme-primary);
-}
-
-.btn-outline-primary {
-    --bs-btn-color: var(--theme-primary);
-    --bs-btn-border-color: var(--theme-primary);
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: var(--theme-primary);
-    --bs-btn-hover-border-color: var(--theme-primary);
-    --bs-btn-focus-shadow-rgb: 13,110,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: var(--theme-primary);
-    --bs-btn-active-border-color: var(--theme-primary);
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: var(--theme-primary);
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: var(--theme-primary);
-    --bs-gradient: none;
-}
-
-.form-check-input:checked {
-    background-color: var(--theme-primary);
-    border-color: var(--theme-primary);
 }
 
 /* Background */
@@ -54,14 +10,6 @@
     /*noinspection CssUnknownTarget*/
     background-image: url("/v/_content/TemplaGroup.Shared/img/theme/christmas.svg");
     opacity: 0.8;
-}
-
-/* Havit components */
-.hx-pager {
-    --bs-pagination-active-bg: var(--theme-primary);
-    --bs-pagination-active-border-color: var(--theme-primary);
-    --bs-pagination-hover-color: var(--theme-primary-light);
-    --bs-pagination-color: var(--theme-primary);
 }
 
 /* Components */

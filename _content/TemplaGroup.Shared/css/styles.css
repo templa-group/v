@@ -1,0 +1,273 @@
+﻿/* Variable Overrides */
+:root {
+    --bs-primary: var(--theme-primary);
+    --bs-primary-rgb: var(--theme-primary-rgb);
+    --bs-primary-text-emphasis: var(--theme-primary-light);
+    --bs-link-color: var(--theme-primary);
+    --bs-link-hover-color: var(--theme-primary-light);
+    --tx-input-opacity: 0.25;
+    --tx-input-opacity-disabled: 0.45;
+}
+
+/* HTML, Body */
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* App Container */
+#app {
+    position: relative;
+    min-height: 100vh;
+}
+
+#app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom 0;
+}
+
+/* Glassmorphism (Background - Simple) */
+/*noinspection CssUnresolvedCustomProperty*/
+.glassmorphism-background {
+    background-color: rgba(var(--bs-body-bg-rgb), 0.85);
+    box-shadow: 0 0 10px 0.25rem rgba(var(--bs-body-bg-rgb), 0.25);
+    
+    -webkit-backdrop-filter: blur(10px); /* Backdrop */
+    backdrop-filter: blur(10px);
+}
+
+/* Glassmorphism (Background - Animated) */
+/*noinspection CssUnresolvedCustomProperty*/
+.glassmorphism-background-animated {
+    position: relative;
+    border-radius: var(--bs-modal-border-radius);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+}
+
+.glassmorphism-background-animated::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: calc(100% - 10px);
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(to left, #ff5770, #e4428d, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
+    background-size: 200% 200%;
+    -webkit-animation: animateGlow 3.25s linear infinite;
+    animation: animateGlow 3.25s linear infinite;
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.glassmorphism-background-animated-content {
+    background-clip: unset;
+    background-color: rgba(var(--bs-body-bg-rgb), 0.85);
+    box-shadow: 0 0 10px .25rem rgba(var(--bs-body-bg-rgb), 0.25);
+
+    -webkit-backdrop-filter: blur(25px); /* Backdrop */
+    backdrop-filter: blur(25px);
+}
+
+/* Bootstrap Classes */
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--theme-primary);
+    --bs-btn-border-color: var(--theme-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--theme-primary-light);
+    --bs-btn-hover-border-color: var(--theme-primary);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--theme-primary);
+    --bs-btn-active-border-color: var(--theme-primary-light);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--theme-primary);
+    --bs-btn-disabled-border-color: var(--theme-primary);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--theme-primary);
+    --bs-btn-border-color: var(--theme-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--theme-primary);
+    --bs-btn-hover-border-color: var(--theme-primary);
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--theme-primary);
+    --bs-btn-active-border-color: var(--theme-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--theme-primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--theme-primary);
+    --bs-gradient: none;
+}
+
+.btn-no-filter {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: var(--bs-border-width);
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: var(--bs-border-radius);
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.card-header-tabs {
+    .nav-link {
+        color: var(--theme-primary);
+    }
+
+    /*noinspection CssUnresolvedCustomProperty*/
+    .nav-link:hover {
+        color: var(--bs-nav-tabs-link-active-color);
+        border-color: transparent;
+    }
+
+    /*noinspection CssUnresolvedCustomProperty*/
+    .nav-link.active {
+        background-color: rgba(var(--bs-body-color-rgb), 0.20);
+        border-color: transparent;
+        border-bottom-color: var(--bs-body-color-rgb);
+    }
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.form-control {
+    background: rgba(var(--bs-body-bg-rgb), var(--tx-input-opacity));
+}
+/*noinspection CssUnresolvedCustomProperty*/
+.form-control-disabled {
+    background: rgba(var(--bs-secondary-bg-rgb), var(--tx-input-opacity-disabled));
+}
+/*noinspection CssUnresolvedCustomProperty*/
+.form-control:focus {
+    background: rgba(var(--bs-body-bg-rgb), var(--tx-input-opacity));
+    border-color: var(--theme-primary-light);
+    box-shadow: 0 0 0 0.25rem rgba(var(--theme-primary-rgb), var(--tx-input-opacity));
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.form-label {
+    color: var(--bs-body-color);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.form-select {
+    background-color: rgba(var(--bs-body-bg-rgb), var(--tx-input-opacity));
+}
+/*noinspection CssUnresolvedCustomProperty*/
+.form-select:focus {
+    background-color: rgba(var(--bs-body-bg-rgb), var(--tx-input-opacity));
+    border-color: var(--theme-primary-light);
+    box-shadow: 0 0 0 0.25rem rgba(var(--theme-primary-rgb), var(--tx-input-opacity));
+}
+
+.form-check-input:checked {
+    background-color: var(--theme-primary);
+    border-color: var(--theme-primary);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.dropdown-menu {
+    --bs-dropdown-bg: rgba(var(--bs-body-bg-rgb), 0.25);
+    --bs-dropdown-link-hover-bg: rgba(var(--bs-body-color-rgb), 0.15);
+    --bs-dropdown-link-active-bg: rgba(var(--bs-body-color-rgb), 0.15);
+    
+    -webkit-backdrop-filter: blur(25px); /* Backdrop */
+    backdrop-filter: blur(25px);
+}
+
+.table {
+    --bs-table-bg: transparent;
+}
+
+.tooltip-inner {
+    max-width: 350px;
+    text-align: left;
+}
+
+.gradient-list-orderer {
+    padding: 0;
+    list-style: none;
+}
+
+.gradient-list-orderer li {
+    position: relative;
+    margin-top: 0.5em;
+    padding-left: 2em;
+    counter-increment: gradient-list;
+}
+
+.gradient-list-orderer li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: counter(gradient-list, decimal-leading-zero);
+    background-image: linear-gradient(#12c2e9, #c471ed, #f64f59);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Havit Classes */
+.hx-pager {
+    --bs-pagination-active-bg: var(--theme-primary);
+    --bs-pagination-active-border-color: var(--theme-primary);
+    --bs-pagination-hover-color: var(--theme-primary-light);
+    --bs-pagination-color: var(--theme-primary);
+}
+
+/* Animations */
+@-webkit-keyframes animateGlow {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+@keyframes animateGlow {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
