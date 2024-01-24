@@ -228,16 +228,6 @@ a[b-mo5ybhq3h9] {
     position: relative;
 }
 
-/* Unfocused input z-index: 4 same as Bootstrap form-controls */
-.input-group .hx-autosuggest-input.is-invalid:not(:focus)[b-ygo8zo3ada] {
-    z-index: 4;
-}
-
-/* Bring the "active" form control to the top of surrounding elements */
-.input-group .hx-autosuggest-input:focus[b-ygo8zo3ada] {
-    z-index: 5;
-}
-
 .form-control.is-invalid[b-ygo8zo3ada] {
     background-position: center right 2.5rem;
     padding-right: 4.125rem;
@@ -251,7 +241,10 @@ a[b-mo5ybhq3h9] {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    z-index: 5;
+}
+
+.hx-autosuggest-input-wrapper:focus-within[b-k26x0s28yy] {
+	z-index: 6;
 }
 
 .input-group .hx-autosuggest-input-wrapper[b-k26x0s28yy] {
@@ -277,9 +270,6 @@ a[b-mo5ybhq3h9] {
 
 .hx-autosuggest-input-icon div[role="button"]:not(:hover)[b-k26x0s28yy]  .hx-icon {
     opacity: var(--hx-autosuggest-input-close-icon-opacity);
-}
-[b-k26x0s28yy] .form-floating > label {
-    z-index: 20;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Autosuggests/Internal/HxAutosuggestItemsInternal.razor.rz.scp.css */
 .dropdown-menu[b-p8clx0pmvn] {
@@ -347,11 +337,6 @@ a[b-mo5ybhq3h9] {
 	font-size: .75rem;
 }
 
-.hx-input-date-icon[b-vy6vrzeamt],
-[b-vy6vrzeamt] .form-floating label {
-	z-index: 10;
-}
-
 .hx-input-date-wrapper[b-vy6vrzeamt] {
 	width: 100%;
 	display: flex;
@@ -363,6 +348,10 @@ a[b-mo5ybhq3h9] {
 	flex-grow: 1;
 	flex-shrink: 1;
 	min-width: 0;
+}
+
+[b-vy6vrzeamt] .dropdown:focus-within {
+    z-index: 6; /* Assures that the inputs' box shadows are always fully visible (rendered on top). Must be larger than 5 because otherwise the validation message is rendered on top. */
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxInputDateRangeInternal.razor.rz.scp.css */
 .hx-input-date-range[b-cguxy625ss] {
@@ -392,9 +381,7 @@ a[b-mo5ybhq3h9] {
     flex: 1 0 50%;
 }
 
-[b-cguxy625ss] .dropdown:focus-within,
-[b-cguxy625ss] .dropdown:has(.is-invalid),
-[b-cguxy625ss] .dropdown:has(.is-valid) {
+[b-cguxy625ss] .dropdown:focus-within {
     z-index: 6; /* Assures that the inputs' box shadows are always fully visible (rendered on top). Must be larger than 5 because otherwise the validation message is rendered on top. */
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxMultiSelectInternal.razor.rz.scp.css */
@@ -529,6 +516,10 @@ button.dropdown-item[b-kjzuko47a2],
     visibility: hidden;
 }
 
+[b-693m69k5v1] .hx-grid-infinite-scroll {
+	white-space: nowrap;
+}
+
 th:hover.hx-grid-sortable[b-693m69k5v1]  .hx-grid-sort-icon {
 	visibility: visible;
 }
@@ -571,18 +562,25 @@ th.hx-grid-sorted.text-end .hx-grid-header-cell-template[b-693m69k5v1] {
 	vertical-align: middle;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Layouts/HxListLayout.razor.rz.scp.css */
-	 [b-c4syx7uv8l] .hx-grid {
-    border-top: 1px solid var(--bs-table-border-color);
+[b-c4syx7uv8l] .hx-grid-container {
+    border-top: 1px solid var(--bs-border-color);
+}
+
+[b-c4syx7uv8l] .hx-grid:has(.sticky-top) {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.hx-list-layout:has(.sticky-top) .dropdown-menu[b-c4syx7uv8l] {
+	z-index: 1030;
+}
+
+.hx-list-layout:has(.hx-grid-infinite-scroll)[b-c4syx7uv8l]  .card {
+	overflow: hidden;
 }
 
 .hx-list-layout-header[b-c4syx7uv8l]  button {
     white-space: nowrap;
-}
-
-.hx-list-layout-header-dropdown[b-c4syx7uv8l] {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
 }
 
 .hx-list-layout-dropdown-menu-link[b-c4syx7uv8l] {
@@ -620,6 +618,14 @@ th.hx-grid-sorted.text-end .hx-grid-header-cell-template[b-693m69k5v1] {
 
 [b-c4syx7uv8l] .hx-pager {
 	margin: 1rem;
+}
+
+.hx-list-layout-dropdown-menu-link:hover[b-c4syx7uv8l] {
+	text-decoration: underline;
+}
+
+.hx-list-layout-named-view[b-c4syx7uv8l] {
+	margin-right: auto;
 }
 
 .hx-list-layout-named-view .card-title[b-c4syx7uv8l] {
@@ -879,13 +885,12 @@ th.hx-grid-sorted.text-end .hx-grid-header-cell-template[b-693m69k5v1] {
 }
 
 [b-7yp9wz11kh] a.nav-link:hover,
-.navbar-desktop-toggler:hover[b-7yp9wz11kh] {
+.hx-sidebar-item-highlight-on-active-child:has(.hx-sidebar-subitems .nav-link.active)[b-7yp9wz11kh]  > a.nav-link:hover {
 	background-color: rgba(var(--hx-sidebar-item-hover-background-color), var(--hx-sidebar-item-hover-background-opacity));
 	color: var(--hx-sidebar-item-hover-color);
 }
 
-[b-7yp9wz11kh] a.nav-link.active,
-[b-7yp9wz11kh] a.nav-link.active:hover {
+[b-7yp9wz11kh] a.nav-link.active {
 	background-color: rgba(var(--hx-sidebar-item-active-background-color), var(--hx-sidebar-item-active-background-opacity));
 	color: var(--hx-sidebar-item-active-color);
 	font-weight: var(--hx-sidebar-item-active-font-weight);
@@ -903,12 +908,16 @@ th.hx-grid-sorted.text-end .hx-grid-header-cell-template[b-693m69k5v1] {
 	transform-origin: .5em 50%;
 }
 
-[b-7yp9wz11kh] a.nav-link:hover i {
+[b-7yp9wz11kh] a.nav-link:hover .hx-sidebar-item-icon {
 	color: var(--hx-sidebar-item-hover-icon-color);
 }
 
-[b-7yp9wz11kh] a.nav-link.active i {
+[b-7yp9wz11kh] a.nav-link.active .hx-sidebar-item-icon {
 	color: var(--hx-sidebar-item-active-icon-color);
+}
+
+.hx-sidebar-item-highlight-on-active-child:has(.hx-sidebar-subitems .nav-link.active)[b-7yp9wz11kh]  .hx-sidebar-item-icon {
+	color: var(--hx-sidebar-parent-item-active-icon-color);
 }
 
 [b-7yp9wz11kh] .bi-chevron-right {
@@ -966,19 +975,19 @@ th.hx-grid-sorted.text-end .hx-grid-header-cell-template[b-693m69k5v1] {
 .hx-progress-indicator-spinner[b-ha9vhtqwa8] {
     color: var(--hx-progress-indicator-spinner-color);
 }
-/* _content/Havit.Blazor.Components.Web.Bootstrap/Tags/Internal/HxInputTagsAutosuggestInputInternal.razor.rz.scp.css */
-input:focus[b-7msbo9dqno] {
+/* _content/Havit.Blazor.Components.Web.Bootstrap/Tags/Internal/HxInputTagsInputInternal.razor.rz.scp.css */
+input:focus[b-6vyashw6w0] {
     outline: none;
 }
 
-input[b-7msbo9dqno] {
+input[b-6vyashw6w0] {
     background-color: inherit;
     color: var(--bs-body-color);
     width: 100%;
     padding: 0;
 }
 
-[b-7msbo9dqno]::placeholder {
+[b-6vyashw6w0]::placeholder {
     color: var(--hx-input-tags-input-placeholder-color);
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Tags/Internal/HxInputTagsInternal.razor.rz.scp.css */
