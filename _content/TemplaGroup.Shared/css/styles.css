@@ -42,6 +42,11 @@ html, body {
     backdrop-filter: blur(10px);
 }
 
+/*noinspection CssUnresolvedCustomProperty*/
+.glassmorphism-background-none {
+    background-color: rgba(var(--bs-body-bg-rgb), 0.35);
+}
+
 /* Glassmorphism (Background - Animated) */
 /*noinspection CssUnresolvedCustomProperty*/
 .glassmorphism-background-animated {
@@ -217,32 +222,12 @@ html, body {
     --bs-table-bg: transparent;
 }
 
-.tooltip-inner {
-    max-width: 350px;
-    text-align: left;
+.popover {
+    max-width: 450px;
 }
 
-.gradient-list-orderer {
-    padding: 0;
-    list-style: none;
-}
-
-.gradient-list-orderer li {
-    position: relative;
-    margin-top: 0.5em;
-    padding-left: 2em;
-    counter-increment: gradient-list;
-}
-
-.gradient-list-orderer li::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: counter(gradient-list, decimal-leading-zero);
-    background-image: linear-gradient(#12c2e9, #c471ed, #f64f59);
-    background-attachment: fixed;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.list-group-item-transparent {
+    background-color: transparent;
 }
 
 /* Havit Classes */
