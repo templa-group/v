@@ -571,8 +571,8 @@ th.hx-grid-sorted.text-end .hx-grid-header-cell-template[b-693m69k5v1] {
 	border-spacing: 0;
 }
 
-.hx-list-layout:has(.sticky-top) .dropdown-menu[b-c4syx7uv8l] {
-	z-index: 1030;
+.hx-list-layout:has(.sticky-top)[b-c4syx7uv8l]  .dropdown-menu {
+	--bs-dropdown-zindex: 1030;
 }
 
 .hx-list-layout:has(.hx-grid-infinite-scroll)[b-c4syx7uv8l]  .card {
