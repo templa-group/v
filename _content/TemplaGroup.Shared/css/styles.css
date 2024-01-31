@@ -193,15 +193,15 @@ html, body {
 }
 
 /*noinspection CssUnresolvedCustomProperty*/
-.form-select {
-    background-color: rgba(var(--bs-body-bg-rgb), var(--tx-input-opacity));
-}
+/*.form-select {
+    background-color: rgba(255, 0, 0, var(--tx-input-opacity));
+}*/
 /*noinspection CssUnresolvedCustomProperty*/
-.form-select:focus {
+/*.form-select:focus {
     background-color: rgba(var(--bs-body-bg-rgb), var(--tx-input-opacity));
     border-color: var(--theme-primary-light);
     box-shadow: 0 0 0 0.25rem rgba(var(--theme-primary-rgb), var(--tx-input-opacity));
-}
+}*/
 
 .form-check-input:checked {
     background-color: var(--theme-primary);
