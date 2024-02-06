@@ -8,3 +8,9 @@ window.cryptoFunctions = {
         return CryptoJS.AES.decrypt(encryptedText, key).toString(CryptoJS.enc.Utf8);
     }
 };
+
+window.removeQueryParam = function (param) {
+    const url = new URL(window.location.href);
+    url.searchParams.delete(param);
+    window.history.replaceState({}, '', url);
+};
