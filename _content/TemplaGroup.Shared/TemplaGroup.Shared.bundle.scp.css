@@ -1,3 +1,88 @@
+/* _content/TemplaGroup.Shared/Components/Statements/Tabs/StatementSummary.razor.rz.scp.css */
+.summary-item[b-alvtoo7rng] {
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.summary-item-link[b-alvtoo7rng],
+.summary-item-link-static[b-alvtoo7rng] {
+    display: block;
+    padding: 30px 20px;
+    background-color: rgba(var(--bs-emphasis-color-rgb), 0.85);
+    color: var(--bs-body-bg);
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    box-shadow: 0 0 10px 0.25rem rgba(var(--bs-emphasis-color-rgb), 0.25);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.summary-item-link[b-alvtoo7rng] {
+    cursor: pointer;
+}
+
+.summary-item-link:hover[b-alvtoo7rng],
+.summary-item-link:hover .summary-item-total[b-alvtoo7rng] {
+    color: var(--bs-white);
+}
+.summary-item-link:hover .summary-item-bg[b-alvtoo7rng] {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+}
+
+.summary-item-title[b-alvtoo7rng] {
+    min-height: 87px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 28px;
+    z-index: 2;
+    position: relative;
+}
+
+.summary-item-total-box[b-alvtoo7rng] {
+    font-size: 22px;
+    z-index: 2;
+    position: relative;
+}
+
+.summary-item-total[b-alvtoo7rng],
+.summary-item-total-static[b-alvtoo7rng] {
+    font-weight: bold;
+    color: var(--bs-primary);
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+.summary-item-bg[b-alvtoo7rng] {
+    height: 128px;
+    width: 128px;
+    background-color: var(--bs-primary);
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.summary-item-2 .summary-item-bg[b-alvtoo7rng] {
+    background-color: var(--bs-success);
+}
+.summary-item-2 .summary-item-total[b-alvtoo7rng] {
+    color: var(--bs-success);
+}
+
+.summary-item-3 .summary-item-bg[b-alvtoo7rng] {
+    background-color: var(--bs-danger);
+}
+.summary-item-3 .summary-item-total[b-alvtoo7rng] {
+    color: var(--bs-danger);
+}
 /* _content/TemplaGroup.Shared/Templates/Animations/BarcodeAnim.razor.rz.scp.css */
 .barcode-container[b-7gssygqwsv] {
     width: 240px;
