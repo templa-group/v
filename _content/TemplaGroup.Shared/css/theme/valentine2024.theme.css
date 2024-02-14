@@ -1,0 +1,69 @@
+﻿/* Theme Colors */
+:root {
+    --theme-primary: #D63384;
+    --theme-primary-rgb: 214, 51, 132;
+    --theme-primary-light: #DE5C9D;
+}
+
+/* Background */
+#app::before {
+    /*noinspection CssUnknownTarget*/
+    background-image: url("/v/_content/TemplaGroup.Shared/img/theme/valentine/background.webp");
+}
+
+/* Heart Raining Anim */
+.heart {
+    position: fixed;
+    font-size: 1.5rem;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0vh) translateX(-10vw);
+    }
+    to {
+        transform: translateY(105vh) translateX(10vw);
+    }
+}
+
+/* Pulsing Heart */
+#pulsing-heart-wrapper {
+    animation:pulse 1s infinite;
+}
+
+#pulsing-heart {
+    width: 100px;
+    height: 90px;
+}
+
+#pulsing-heart:before, #pulsing-heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: var(--theme-primary);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    animation:pulse-color 1s infinite;
+}
+
+#pulsing-heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+    animation:pulse-color 1s infinite;
+}
+
+@keyframes pulse {
+    10% {transform: scale(1.1)}
+}
+
+@keyframes pulse-color {
+    10% {background: var(--theme-primary-light)}
+}
