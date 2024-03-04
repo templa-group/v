@@ -43,8 +43,12 @@ html, body {
 }
 
 /*noinspection CssUnresolvedCustomProperty*/
-.glassmorphism-background-none {
+.glassmorphism-background-semi-transparent {
     background-color: rgba(var(--bs-body-bg-rgb), 0.35);
+}
+
+.glassmorphism-background-transparent {
+    background-color: transparent;
 }
 
 /* Glassmorphism (Background - Animated) */
