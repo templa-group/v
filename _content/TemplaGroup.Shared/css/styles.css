@@ -260,6 +260,24 @@ html, body {
     --bs-pagination-color: var(--theme-primary);
 }
 
+/* Watermarks */
+.watermark-text {
+    position: relative;
+}
+
+.watermark-text::after {
+    content: attr(data-watermark);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: clamp(8em, 10vw, 10vh);
+    font-weight: bold;
+    text-align: center;
+    color: rgba(var(--bs-primary-rgb), 0.2);
+    z-index: 9999;
+}
+
 /* Animations */
 @-webkit-keyframes animateGlow {
     0% {

@@ -298,7 +298,7 @@ a[b-mo5ybhq3h9] {
 	transform: translateY(-50%);
 }
 
-.hx-input-date:has(input:not(:disabled)) + .hx-input-date-icon[b-vy6vrzeamt] {
+[b-vy6vrzeamt] .hx-input-date:has(input:not(:disabled)) .hx-input-date-icon {
 	cursor: pointer;
 }
 
@@ -308,7 +308,7 @@ a[b-mo5ybhq3h9] {
 	width: min-content;
 }
 
-[b-vy6vrzeamt] .hx-input-date-dropdown-buttons {
+.hx-input-date-dropdown-buttons[b-vy6vrzeamt] {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -321,15 +321,15 @@ a[b-mo5ybhq3h9] {
 	background-position: right calc(0.375em + 2rem) center;
 }
 
-.hx-input-date-has-calendar-icon .form-control[b-vy6vrzeamt] {
+.hx-input-date-has-calendar-icon[b-vy6vrzeamt]  .form-control {
 	padding-right: 4.25rem;
 }
 
-.hx-input-date-has-calendar-icon.input-group-lg .form-control[b-vy6vrzeamt] {
+.hx-input-date-has-calendar-icon.input-group-lg[b-vy6vrzeamt]  .form-control {
 	padding-right: 4.75rem;
 }
 
-.hx-input-date-has-calendar-icon.input-group-sm .form-control[b-vy6vrzeamt] {
+.hx-input-date-has-calendar-icon.input-group-sm[b-vy6vrzeamt]  .form-control {
 	padding-right: 4rem;
 }
 
@@ -352,6 +352,20 @@ a[b-mo5ybhq3h9] {
 
 [b-vy6vrzeamt] .dropdown:focus-within {
     z-index: 6; /* Assures that the inputs' box shadows are always fully visible (rendered on top). Must be larger than 5 because otherwise the validation message is rendered on top. */
+}
+
+.input-group-start[b-vy6vrzeamt]  .form-control {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.input-group-end[b-vy6vrzeamt]  .form-control {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+/* Invalid left/right input borders need to be over the input group borders in invalid state. */
+.input-group[b-vy6vrzeamt]  .hx-input-date:has(.is-invalid):not(:focus-within) {
+	z-index: 3;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxInputDateRangeInternal.razor.rz.scp.css */
 .hx-input-date-range[b-cguxy625ss] {
@@ -385,6 +399,10 @@ a[b-mo5ybhq3h9] {
     z-index: 6; /* Assures that the inputs' box shadows are always fully visible (rendered on top). Must be larger than 5 because otherwise the validation message is rendered on top. */
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxMultiSelectInternal.razor.rz.scp.css */
+.dropdown[b-kjzuko47a2] {
+	flex-grow: 1;
+}
+
 .dropdown-menu[b-kjzuko47a2] {
     width: 100%;
     overflow: auto;
@@ -442,11 +460,23 @@ button.dropdown-item[b-kjzuko47a2],
 .hx-multi-select-filter-input-icon div[role="button"]:not(:hover)[b-kjzuko47a2]  .hx-icon {
 	opacity: var(--hx-multi-select-filter-input-icon-opacity);
 }
+
+.input-group-start[b-kjzuko47a2]  .form-select {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.input-group-end[b-kjzuko47a2]  .form-select {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/SearchBox/HxSearchBox.razor.rz.scp.css */
-[b-4wqcai4a3p] .dropdown,
-[b-4wqcai4a3p] div[data-bs-toggle="dropdown"],
+[b-4wqcai4a3p] .dropdown {
+    flex-grow: 1;
+}
+
 [b-4wqcai4a3p] .dropdown-menu {
-	width: 100%; /* override for current .btn-group, see issue #117 */
+    width: 100%; /* override for current .btn-group, see issue #117 */
 }
 
 [b-4wqcai4a3p] .hx-search-box-input-icon {
@@ -455,20 +485,23 @@ button.dropdown-item[b-kjzuko47a2],
     transform: translateY(-50%);
     display: flex;
     align-items: center;
-    z-index: 10;
+    z-index: 5;
 }
 
 [b-4wqcai4a3p] .hx-search-box-input-icon-end {
     right: .75rem;
 }
 
-[b-4wqcai4a3p] .hx-search-box-input-with-search-icon {
-	border-top-right-radius: 0.375rem !important;
-	border-bottom-right-radius: 0.375rem !important;
+[b-4wqcai4a3p] .hx-search-box-input-icon-start {
+    left: .75rem;
 }
 
-[b-4wqcai4a3p] .hx-search-box-input-with-clear-icon {
+.form-control[b-4wqcai4a3p] {
 	padding-right: 2.375rem;
+}
+
+.hx-search-box:has(.hx-search-box-input-icon-start) .form-control[b-4wqcai4a3p] {
+    padding-left: 2.375rem;
 }
 
 .dropdown-item:not(:active)[b-4wqcai4a3p]  .hx-search-box-item-title {
@@ -486,6 +519,20 @@ button.dropdown-item[b-kjzuko47a2],
 [b-4wqcai4a3p] .dropdown-menu {
     overflow: auto;
     max-height: var(--hx-search-box-dropdown-menu-height);
+}
+
+.input-group-start[b-4wqcai4a3p]  .form-control {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group-end[b-4wqcai4a3p]  .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+[b-4wqcai4a3p] .dropdown:focus-within {
+    z-index: 6; /* Assures that the inputs' box shadows are always fully visible (rendered on top). Must be larger than 5 because otherwise the validation message is rendered on top. */
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/SearchBox/Internal/HxSearchBoxItemInternal.razor.rz.scp.css */
 .hx-search-box-item[b-6f2x8m2y3b] {
@@ -526,7 +573,7 @@ th:hover.hx-grid-sortable[b-693m69k5v1]  .hx-grid-sort-icon {
 
 th > .hx-grid-header-cell-container[b-693m69k5v1] {
     display: inline-flex;
-    gap: .5rem;
+    gap: .25rem;
 }
 
 th.hx-grid-sortable.text-end .hx-grid-sort-icon[b-693m69k5v1],
