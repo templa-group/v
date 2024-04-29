@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TemplaGroup.Web",
   "resources": {
-    "hash": "sha256-LA1XWgSIDauAQTDmW1T37s0p08GVc6RU4FVnnIPHM7k=",
+    "hash": "sha256-duz1G6ZoaBCCZf4W26QE0wE9m/tAkAU+bDUO20dSRp0=",
     "jsModuleNative": {
       "dotnet.native.8.0.3.wzxwl5s97r.js": "sha256-D4sYBYmDfH/YekgYRgX959/2RG6k28sJSHmcsn+iikk="
     },
@@ -204,20 +204,20 @@
       "System.Xml.Linq.wasm": "sha256-TnH75HFXwiegwJVGgRwTElLJe9CfCUgnT2EAB3P2nzE=",
       "System.Xml.ReaderWriter.wasm": "sha256-mshAYX1vbo8a9hqOXWN7b9D29odmtdIMaYkRcYhmfdw=",
       "System.Xml.XDocument.wasm": "sha256-93tWNIJijDo+LV2ojnrPuvrYJlIij1MiSnUWesJo/YI=",
-      "TemplaGroup.Chart.wasm": "sha256-iV0m9sYGLDex+t5DNWi3w+/4udfLJXMYM22ozIui54c=",
-      "TemplaGroup.Core.wasm": "sha256-HSKpjyEPDoBaXnd8avYSSt0OgKfm2EE6IaPu7en1dIg=",
-      "TemplaGroup.Shared.wasm": "sha256-lqxWZL6QtqCFu6UtrWvu9WOalcT3c/9c8fiAXBmiwJE=",
-      "TemplaGroup.Web.wasm": "sha256-Ke1bCKOujf3z/MBJ/AKC4SQefBwnUyPt2zedG/ZFEz0="
+      "TemplaGroup.Chart.wasm": "sha256-0JCbt/CQehV0V3HVq4F+V1GzOpySN/cFFQe69PNzyzY=",
+      "TemplaGroup.Core.wasm": "sha256-uPP77tPMQTOYCpmWnM7lLHDOjOji9dJpF6hrrEcIPwA=",
+      "TemplaGroup.Shared.wasm": "sha256-S4cXYcURkVYqn/cXiCnHQY1jvFfH00NkdhKj9o/ITto=",
+      "TemplaGroup.Web.wasm": "sha256-Kbz4I7Q/adVX/dsioYVoGzZZugaheRI4APXL2gyZyPk="
     },
     "satelliteResources": {
       "cs": {
         "Havit.Blazor.Components.Web.Bootstrap.resources.wasm": "sha256-hyQqdprhQQYtMWRUdbqDU501vcOo3XjCRTXlK6UIX84="
       },
       "en-US": {
-        "TemplaGroup.Core.resources.wasm": "sha256-AxsnkrHNd2Kui7mlWaJAt0T62nzgq0VdAGdaQCPo7Eg="
+        "TemplaGroup.Core.resources.wasm": "sha256-7z39Qs/n7hXvEeYIkpq/EeakNN0q+YlTj1vEgsPL4LM="
       },
       "es-MX": {
-        "TemplaGroup.Core.resources.wasm": "sha256-u2h/eY+zb94VKKur8cx242FQukXQCq0FcJrnLfLxeig="
+        "TemplaGroup.Core.resources.wasm": "sha256-B0QiTXfvoeKz9UrFDrSFdlD7U5GWht4M1aWNOje/j+M="
       },
       "it-IT": {
         "Havit.Blazor.Components.Web.Bootstrap.resources.wasm": "sha256-0etu/bB6jwK5NcnuSpXTlBU+xu3Jc4wQ5IvIZDNAL8A="
