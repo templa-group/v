@@ -233,11 +233,11 @@ html, body {
 /*noinspection CssUnresolvedCustomProperty*/
 .dropdown-menu {
     --bs-dropdown-bg: rgba(var(--bs-body-bg-rgb), 0.25);
-    --bs-dropdown-link-hover-bg: rgba(var(--bs-body-color-rgb), 0.15);
-    --bs-dropdown-link-active-bg: rgba(var(--bs-body-color-rgb), 0.15);
+    --bs-dropdown-link-hover-bg: rgba(var(--bs-body-color-rgb), 0.10);
+    --bs-dropdown-link-active-bg: rgba(var(--bs-body-color-rgb), 0.10);
     
-    -webkit-backdrop-filter: blur(25px); /* Backdrop */
-    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(10px); /* Backdrop */
+    backdrop-filter: blur(10px);
 }
 
 .table {

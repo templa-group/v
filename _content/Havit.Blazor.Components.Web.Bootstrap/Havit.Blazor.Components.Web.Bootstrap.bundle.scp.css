@@ -368,10 +368,6 @@ a[b-mo5ybhq3h9] {
 	z-index: 3;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxInputDateRangeInternal.razor.rz.scp.css */
-.hx-input-date-range[b-cguxy625ss] {
-    display: flex;
-}
-
 [b-cguxy625ss] .feedback-floating {
     left: 0;
 }
@@ -397,6 +393,30 @@ a[b-mo5ybhq3h9] {
 
 [b-cguxy625ss] .dropdown:focus-within {
     z-index: 6; /* Assures that the inputs' box shadows are always fully visible (rendered on top). Must be larger than 5 because otherwise the validation message is rendered on top. */
+}
+
+.hx-input-date-icon[b-cguxy625ss] {
+	display: flex;
+	align-items: center;
+	margin-right: 1rem;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.hx-input-date-has-calendar-icon[b-cguxy625ss]  .form-control {
+    padding-right: 2.5rem;
+}
+
+.hx-input-date-has-calendar-icon[b-cguxy625ss]  .is-invalid {
+	background-position: right calc(0.375em + 2rem) center;
+    padding-right: 4.25rem;
+}
+
+.hx-input-date-range:has(input:not(:disabled)) .hx-input-date-icon[b-cguxy625ss] {
+	cursor: pointer;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxMultiSelectInternal.razor.rz.scp.css */
 .dropdown[b-kjzuko47a2] {

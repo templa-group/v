@@ -1,11 +1,4 @@
-﻿/* Havit */
-/*noinspection CssUnknownTarget*/
-@import "../_content/Havit.Blazor.Components.Web.Bootstrap/bootstrap.css";
-/*noinspection CssUnknownTarget*/
-@import "../_content/Havit.Blazor.Components.Web.Bootstrap/defaults.css";
-
-
-/* Shared */
+﻿/* Shared */
 /*noinspection CssUnknownTarget*/
 @import "../_content/TemplaGroup.Shared/css/theme/default.theme.css?v=1.2"; /* Change theme here */
 /*noinspection CssUnknownTarget*/

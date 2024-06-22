@@ -83,6 +83,25 @@
 .summary-item-3 .summary-item-total[b-alvtoo7rng] {
     color: var(--bs-danger);
 }
+/* _content/TemplaGroup.Shared/Dialogs/Wrappers/TxSearchEntityDialogWrapper.razor.rz.scp.css */
+/*noinspection CssUnresolvedCustomProperty*/
+.progress-container[b-wy324wlct3] {
+    z-index: 1200;
+    position: absolute;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%,-50%) !important;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--bs-dark-rgb), 0.75);
+    -webkit-backdrop-filter: blur(10px); /* Backdrop */
+    backdrop-filter: blur(10px);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.dialog-body[b-wy324wlct3] {
+    padding: var(--bs-modal-padding);
+}
 /* _content/TemplaGroup.Shared/Templates/Animations/BarcodeAnim.razor.rz.scp.css */
 .barcode-container[b-7gssygqwsv] {
     width: 240px;

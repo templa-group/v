@@ -23,15 +23,6 @@ window.cultureInfo = {
     set: (value) => window.localStorage['AppCulture'] = value
 };
 
-// Theme
-window.setColorMode = (colorMode) => {
-    if (colorMode === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-bs-theme', 'dark')
-    } else {
-        document.documentElement.setAttribute('data-bs-theme', colorMode)
-    }
-}
-
 // Save file
 window.saveAsFile = (fileName, content) => {
     const blob = new Blob([content], {type: 'application/pdf'});
