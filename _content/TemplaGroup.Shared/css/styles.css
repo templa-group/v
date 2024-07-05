@@ -271,7 +271,39 @@ html, body {
 }
 
 /* Watermarks */
+.watermark-container {
+    position: relative;
+}
+
 .watermark-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.watermark-text::after {
+    content: attr(data-watermark);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: clamp(8em, 10vw, 10vh);
+    font-weight: bold;
+    text-align: center;
+    color: rgba(var(--bs-primary-rgb), 0.2);
+    z-index: 1;
+}
+
+.watermark-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/*.watermark-text {
     position: relative;
 }
 
@@ -286,7 +318,7 @@ html, body {
     text-align: center;
     color: rgba(var(--bs-primary-rgb), 0.2);
     z-index: 9999;
-}
+}*/
 
 /* Animations */
 @-webkit-keyframes animateGlow {
