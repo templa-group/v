@@ -238,83 +238,6 @@
     75%  {background-size:15px 15px,35px 15px,35px 35px,15px 35px}
     100% {background-size:35px 15px,15px 15px,15px 35px,35px 35px}
 }
-/* _content/TemplaGroup.Shared/Templates/Animations/LoadingDotsAnim.razor.rz.scp.css */
-.dot[b-r7q7ysj1pp] {
-    width: 24px;
-    height: 24px;
-    background: #3ac;
-    border-radius: 100%;
-    display: inline-block;
-    animation: slide-b-r7q7ysj1pp 1s infinite;
-}
-.dot:nth-child(1)[b-r7q7ysj1pp] {
-    animation-delay: 0.1s;
-    background: #32aacc;
-}
-.dot:nth-child(2)[b-r7q7ysj1pp] {
-    animation-delay: 0.2s;
-    background: #64aacc;
-}
-.dot:nth-child(3)[b-r7q7ysj1pp] {
-    animation-delay: 0.3s;
-    background: #96aacc;
-}
-.dot:nth-child(4)[b-r7q7ysj1pp] {
-    animation-delay: 0.4s;
-    background: #c8aacc;
-}
-.dot:nth-child(5)[b-r7q7ysj1pp] {
-    animation-delay: 0.5s;
-    background: #faaacc;
-}
-@-moz-keyframes slide {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.3;
-        transform: scale(2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-@-webkit-keyframes slide {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.3;
-        transform: scale(2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-@-o-keyframes slide {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.3;
-        transform: scale(2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-@keyframes slide-b-r7q7ysj1pp {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.3;
-        transform: scale(2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 /* _content/TemplaGroup.Shared/Templates/Grid/Legacy/GridSearchBox.razor.rz.scp.css */
 .grid-search-box-input-icon[b-lhy5klsrlc] {
     position: absolute;
@@ -344,7 +267,7 @@
     padding: 15px 25px;
     margin: 15px 0;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(35px);
     background-image: linear-gradient(45deg, #ffffff2f, #ffffff10);
     transition-property: opacity, transform;
     transition: 0.5s ease-in;
@@ -381,8 +304,83 @@
     border-color: var(--bs-danger);
 }
 
+/*noinspection CssUnresolvedCustomProperty*/
 .tx-alert-primary[b-iynj5qblrg] {
     border-color: var(--bs-primary);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.tx-alert-solid[b-iynj5qblrg] {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    margin: 15px 0;
+    border-radius: 12px;
+    background: var(--bs-body-color);
+    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.tx-alert-solid.active[b-iynj5qblrg] {
+    transform: translateX(0%);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.tx-alert-solid > .icon[b-iynj5qblrg] {
+    color: var(--bs-body-bg);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.tx-alert-solid > .text[b-iynj5qblrg] {
+    width: 100%;
+    padding: 0 25px;
+    color: var(--bs-body-bg);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.tx-alert-solid > .text p[b-iynj5qblrg] {
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--bs-secondary-bg);
+}
+
+.tx-alert-solid > .tx-btn-close[b-iynj5qblrg] {    
+    pointer-events: auto;
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    color: var(--bs-body-bg);
+    background: transparent;
+    border: 0;
+    border-radius: .375rem;
+    opacity: 0.5;
+}
+
+.tx-alert-solid > .tx-btn-close:hover[b-iynj5qblrg] {
+    opacity: 0.75;
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.tx-alert-solid.success > .icon[b-iynj5qblrg] {
+    color: var(--bs-success);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.tx-alert-solid.warning > .icon[b-iynj5qblrg] {
+    color: var(--bs-warning);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.tx-alert-solid.danger > .icon[b-iynj5qblrg] {
+    color: var(--bs-danger);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.tx-alert-solid.primary > .icon[b-iynj5qblrg] {
+    color: var(--bs-primary);
 }
 /* _content/TemplaGroup.Shared/Templates/Progress/ProcessProgress.razor.rz.scp.css */
 .progress-wrapper > div[b-8jma491njq] {
@@ -489,7 +487,7 @@ li.step.current[b-8jma491njq]::before {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background-color: rgba(var(--bs-dark-rgb), 0.75);
+    background-color: rgba(var(--bs-body-bg-rgb), 0.75);
     -webkit-backdrop-filter: blur(10px); /* Backdrop */
     backdrop-filter: blur(10px);
 }

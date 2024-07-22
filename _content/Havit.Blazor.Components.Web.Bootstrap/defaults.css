@@ -5,9 +5,11 @@
 	--hx-autosuggest-item-highlighted-background-color: 			var(--bs-tertiary-bg);
 	--hx-autosuggest-dropdown-menu-height: 							300px;
 	--hx-autosuggest-dropdown-menu-width: 							100%;
+	--hx-autosuggest-input-search-icon-color:						unset;
+	--hx-autosuggest-input-clear-icon-color:						unset;
 
 	/* HxButton */
-	--hx-button-icon-text-spacer-width: 							0.25rem;
+	--hx-button-gap: 							.25rem;
 
 	/* HxSidebar */
 	--hx-sidebar-background-color: 									transparent;
@@ -88,6 +90,7 @@
 	--hx-grid-button-hover-background: 								var(--bs-secondary-bg);
 	--hx-grid-button-border-radius: 								var(--bs-border-radius);
 	--hx-grid-sorted-icon-color: 									var(--bs-primary);
+	--hx-grid-progress-indicator-color:								var(--bs-primary);
 
 	/* HxInputFileDropZone */
 	--hx-input-file-drop-zone-border-width: 						1px;
@@ -143,6 +146,7 @@
 	--hx-multi-select-background-color: 							var(--bs-body-bg);
 	--hx-multi-select-dropdown-menu-height: 						300px;
 	--hx-multi-select-filter-input-icon-opacity: 					.25;
+	--hx-multi-select-dropdown-menu-width: 							100%;
 
 	/* TagInput */
 	--hx-input-tags-tag-margin: 									0 .25rem 0 0;
@@ -194,6 +198,9 @@
 	--hx-search-box-item-subtitle-font-size: 						.75rem;
 	--hx-search-box-item-highlighted-background-color: 				var(--bs-tertiary-bg);
 	--hx-search-box-dropdown-menu-height: 							300px;
+	--hx-search-box-dropdown-menu-width: 							100%;
+	--hx-search-box-input-search-icon-color:						unset;
+	--hx-search-box-input-clear-icon-color:							unset;
 }
 
 form {

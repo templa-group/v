@@ -1,4 +1,10 @@
-﻿/* Variable Overrides */
+﻿/* Animations */
+@import "animations/bouncing-dots.anim.css?v1.0";
+
+/* Animations - Wrappers */
+@import "animations/wrappers/preloader.wrapper.css?v1.0";
+
+/* Variable Overrides */
 :root {
     --bs-primary: var(--theme-primary);
     --bs-primary-rgb: var(--theme-primary-rgb);
@@ -38,8 +44,8 @@ html, body {
     background-color: rgba(var(--bs-body-bg-rgb), 0.85);
     box-shadow: 0 0 10px 0.25rem rgba(var(--bs-body-bg-rgb), 0.25);
     
-    -webkit-backdrop-filter: blur(10px); /* Backdrop */
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px); /* Backdrop */
+    backdrop-filter: blur(15px);
 }
 
 /*noinspection CssUnresolvedCustomProperty*/
@@ -121,6 +127,7 @@ html, body {
     --bs-gradient: none;
 }
 
+/*noinspection CssNoGenericFontName*/
 .btn-no-filter {
     --bs-btn-padding-x: 0.75rem;
     --bs-btn-padding-y: 0.375rem;
@@ -236,8 +243,8 @@ html, body {
     --bs-dropdown-link-hover-bg: rgba(var(--bs-body-color-rgb), 0.10);
     --bs-dropdown-link-active-bg: rgba(var(--bs-body-color-rgb), 0.10);
     
-    -webkit-backdrop-filter: blur(10px); /* Backdrop */
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px); /* Backdrop */
+    backdrop-filter: blur(15px);
 }
 
 .table {
@@ -246,12 +253,12 @@ html, body {
 
 /*noinspection CssUnresolvedCustomProperty*/
 .table-selector {
-    --bs-table-hover-color: rgba(var(--bs-info-rgb), 1.0);
+    --bs-table-hover-color: rgba(var(--bs-primary-rgb), 1.0);
 }
 
 /*noinspection CssUnresolvedCustomProperty*/
 .table-selector .table-active {
-    --bs-table-color-state: rgba(var(--bs-info-rgb), 1.0);
+    --bs-table-color-state: rgba(var(--bs-primary-rgb), 1.0);
 }
 
 .popover {
@@ -301,24 +308,6 @@ html, body {
     position: relative;
     z-index: 2;
 }
-
-
-/*.watermark-text {
-    position: relative;
-}
-
-.watermark-text::after {
-    content: attr(data-watermark);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-30deg);
-    font-size: clamp(8em, 10vw, 10vh);
-    font-weight: bold;
-    text-align: center;
-    color: rgba(var(--bs-primary-rgb), 0.2);
-    z-index: 9999;
-}*/
 
 /* Animations */
 @-webkit-keyframes animateGlow {

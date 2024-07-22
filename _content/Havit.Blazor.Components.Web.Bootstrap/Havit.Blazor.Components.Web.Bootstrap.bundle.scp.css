@@ -1,10 +1,12 @@
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Buttons/HxButton.razor.rz.scp.css */
-[b-np76lu746f] .hx-button-icon-text-spacer {
-	margin-right: var(--hx-button-icon-text-spacer-width);
+.btn:not(.navbar-toggler)[b-np76lu746f] {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--hx-button-gap);
 }
 
-[b-np76lu746f] .hx-button-text-icon-spacer {
-	margin-left: var(--hx-button-icon-text-spacer-width);
+.btn.dropdown-toggle[b-np76lu746f]::after  {
+	margin-left: 0;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Calendar/HxCalendar.razor.rz.scp.css */
 .hx-calendar[b-uq8tfob39y] {
@@ -19,8 +21,8 @@
 }
 
 [b-uq8tfob39y] .hx-calendar-navigation-button {
-    --bs-btn-padding-y: 0.25rem;
-    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem;
     --bs-btn-font-size: 1rem;
     color: var(--hx-calendar-navigation-button-text-color);
     border: none;
@@ -36,17 +38,21 @@
 
 .form-select[b-uq8tfob39y] {
     margin: 0 .125rem;
-    padding: 0.25rem 1.75rem 0.25rem 0.5rem;
+    padding: .25rem 1.75rem .25rem .5rem;
     background-size: 9px 9px;
     cursor: pointer;
 }
 
-.form-select:not(:hover)[b-uq8tfob39y] {
+.form-select[b-uq8tfob39y] {
     background-image: none;
-    background-color: transparent;
+    border-color: var(--bs-body-bg);
     width: fit-content;
-    border-color: transparent;
     transition: all 0.15s ease-in-out;
+}
+
+.form-select:hover[b-uq8tfob39y] {
+    background-image: var(--bs-form-select-bg-img);
+    border-color: var(--bs-border-color);
 }
 
 [b-uq8tfob39y] .btn:hover {
@@ -268,12 +274,16 @@ a[b-mo5ybhq3h9] {
     font-size: .75rem;
 }
 
-.hx-autosuggest-input-icon div[role="button"]:not(:hover)[b-k26x0s28yy]  .hx-icon {
-    opacity: var(--hx-autosuggest-input-close-icon-opacity);
+[b-k26x0s28yy] .hx-autosuggest-input-icon-clear {
+    color: var(--hx-autosuggest-input-clear-icon-color);
+}
+
+[b-k26x0s28yy] .hx-autosuggest-input-icon-search {
+    color: var(--hx-autosuggest-input-search-icon-color);
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Autosuggests/Internal/HxAutosuggestItemsInternal.razor.rz.scp.css */
 .dropdown-menu[b-p8clx0pmvn] {
-    width: var(--hx-autosuggest-dropdown-menu-width);
+    min-width: var(--hx-autosuggest-dropdown-menu-width);
     overflow: auto;
     max-height: var(--hx-autosuggest-dropdown-menu-height);
 }
@@ -424,7 +434,7 @@ a[b-mo5ybhq3h9] {
 }
 
 .dropdown-menu[b-kjzuko47a2] {
-    width: 100%;
+    min-width: var(--hx-multi-select-dropdown-menu-width);
     overflow: auto;
     max-height: var(--hx-multi-select-dropdown-menu-height);
 }
@@ -496,7 +506,7 @@ button.dropdown-item[b-kjzuko47a2],
 }
 
 [b-4wqcai4a3p] .dropdown-menu {
-    width: 100%; /* override for current .btn-group, see issue #117 */
+    min-width: var(--hx-search-box-dropdown-menu-width); /* override for current .btn-group, see issue #117 */
 }
 
 [b-4wqcai4a3p] .hx-search-box-input-icon {
@@ -553,6 +563,14 @@ button.dropdown-item[b-kjzuko47a2],
 
 [b-4wqcai4a3p] .dropdown:focus-within {
     z-index: 6; /* Assures that the inputs' box shadows are always fully visible (rendered on top). Must be larger than 5 because otherwise the validation message is rendered on top. */
+}
+
+[b-4wqcai4a3p] .hx-search-box-input-icon-clear {
+    color: var(--hx-search-box-input-clear-icon-color);
+}
+
+[b-4wqcai4a3p] .hx-search-box-input-icon-search {
+    color: var(--hx-search-box-input-search-icon-color);
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/SearchBox/Internal/HxSearchBoxItemInternal.razor.rz.scp.css */
 .hx-search-box-item[b-6f2x8m2y3b] {
@@ -627,6 +645,39 @@ th.hx-grid-sorted.text-end .hx-grid-header-cell-template[b-693m69k5v1] {
 
 [b-693m69k5v1] .hx-context-menu-grid-column {
 	vertical-align: middle;
+}
+
+.hx-grid-progress-indicator thead:not(.sticky-top)[b-693m69k5v1] {
+	position: relative;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.hx-grid-progress-indicator thead[b-693m69k5v1]:before {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+	display: block;
+    bottom: -1px;
+    height: 1px;
+    background-color: var(--hx-grid-progress-indicator-color);
+    animation: 1.5s ease-in-out 0s 1 slideRight-b-693m69k5v1;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slideRight-b-693m69k5v1 {
+	0% {
+		right: 100%;
+		width: 0;
+	}
+	50% {
+		width: 20%;
+	}
+	100% {
+		right: 0;
+		width: 0;
+	}
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Layouts/HxListLayout.razor.rz.scp.css */
 [b-c4syx7uv8l] .hx-grid-container {
