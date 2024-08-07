@@ -2,6 +2,7 @@
 .btn:not(.navbar-toggler)[b-np76lu746f] {
 	display: inline-flex;
 	align-items: center;
+	justify-content: center;
 	gap: var(--hx-button-gap);
 }
 

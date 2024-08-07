@@ -712,3 +712,18 @@ a[b-bigrsxr6w8] {
 .display-7[b-9ryvmw4pte] {
     font-size: 1.2rem;
 }
+/* _content/TemplaGroup.Shared/Templates/TxHorizontalRule.razor.rz.scp.css */
+hr.hr-text[b-ncziiyd03a]::before {
+    content: attr(data-content);
+    display: inline-block;
+    background: var(--bs-body-bg);
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: inherit;
+    border-radius: 30rem;
+    padding: 0.2rem 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
