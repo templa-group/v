@@ -52,7 +52,7 @@
 /* Background */
 #app::before {
     /*noinspection CssUnknownTarget*/
-    background-image: url("/v/_content/TemplaGroup.Shared/img/theme/halloween.svg");
+    background-image: url("/_content/TemplaGroup.Shared/img/theme/halloween.svg");
     opacity: 0.8;
 }
 

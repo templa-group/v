@@ -8,7 +8,7 @@
 /* Background */
 #app::before {
     /*noinspection CssUnknownTarget*/
-    background-image: url("/v/_content/TemplaGroup.Shared/img/theme/christmas.svg");
+    background-image: url("/_content/TemplaGroup.Shared/img/theme/christmas.svg");
     opacity: 0.8;
 }
 

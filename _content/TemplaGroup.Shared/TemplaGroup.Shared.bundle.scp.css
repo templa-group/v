@@ -491,6 +491,10 @@ li.step.current[b-8jma491njq]::before {
     -webkit-backdrop-filter: blur(10px); /* Backdrop */
     backdrop-filter: blur(10px);
 }
+
+.progress-container.animate[b-zux0w4f8mh] {
+    --animate-duration: 0.3s;
+}
 /* _content/TemplaGroup.Shared/Templates/Sidebars/Base/Sidebar.razor.rz.scp.css */
 /*noinspection CssUnresolvedCustomProperty*/
 .offcanvas-start.hx-offcanvas-sm[b-d2qb2c6y39][b-cjlon6fl9r],
@@ -720,6 +724,7 @@ hr.hr-text[b-ncziiyd03a]::before {
     font-weight: bold;
     font-size: 0.85rem;
     text-transform: uppercase;
+    text-align: center;
     color: inherit;
     border-radius: 30rem;
     padding: 0.2rem 2rem;

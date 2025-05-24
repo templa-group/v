@@ -8,5 +8,5 @@
 /* Background */
 #app::before {
     /*noinspection CssUnknownTarget*/
-    background-image: url("/v/_content/TemplaGroup.Shared/img/theme/default/background.webp");
+    background-image: url("/_content/TemplaGroup.Shared/img/theme/default/background.webp");
 }
