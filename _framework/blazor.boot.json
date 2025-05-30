@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TemplaGroup.Web",
   "resources": {
-    "hash": "sha256-p6Zdy8JBbLAODCcRgBuANVTkSBaWqQhnerqsSa4e790=",
+    "hash": "sha256-dz1TisrVZdOpGJltGxhKdoGkGS+s8TR8jCFiBDoHeO4=",
     "jsModuleNative": {
       "dotnet.native.8.0.12.5019ia6r61.js": "sha256-B6DNRvFeCUi3jbx9uKpuj+hV9cN0KG4RdZj1FgBZwj8="
     },
@@ -202,21 +202,21 @@
       "System.Xml.XDocument.wasm": "sha256-+WnYaazc0W5Q8zICYXRiEbp1zW64E0KCiHOhiLIZhRU=",
       "Tavenem.Blazor.IndexedDB.wasm": "sha256-EZ10nOqYD7MtxN94HB3WlSFcFfs5o7lzlQuNAEgbLAw=",
       "Tavenem.DataStore.wasm": "sha256-JfPlUqZhG+oggVae4pr/yWCRUcHmzEwrG4/68kuFLe4=",
-      "TemplaGroup.Chart.wasm": "sha256-Je4ZXous76L/GACvcdKqiflv2Y/JmhgkkTvWJ6vfRvQ=",
-      "TemplaGroup.Core.wasm": "sha256-iYgNlRvvCLo4CruAWLXAp7zhFFSO99aS8EN+jhX+Il8=",
-      "TemplaGroup.Logging.wasm": "sha256-quAHmp7KM3Ya8d6wdFSX1tqUhIRkCanZz7jwnZBKPK8=",
-      "TemplaGroup.Shared.wasm": "sha256-OEWuVeQTx2U5wqXY3ckSz0ws71ZL2HIbd/LNCfeBfxk=",
-      "TemplaGroup.Web.wasm": "sha256-rq9lEvy21obB30I+VpHpOWqTc3llfHNNYFEUk/ydQb0="
+      "TemplaGroup.Chart.wasm": "sha256-oSEaHMilomjYOcVTNt2VMLCoxjjL2yOr/Ifx6zxbQy4=",
+      "TemplaGroup.Core.wasm": "sha256-A1oZoWh8HkOvzVtXbwT+eDPkz0sEJzXU6drySGcPnPM=",
+      "TemplaGroup.Logging.wasm": "sha256-s2lVBhx/GKIye6DY4oZicP4iM4T+PH97Q7HcvBVm4P0=",
+      "TemplaGroup.Shared.wasm": "sha256-3IxykWCc3QHkKGEIBp4ByVSSrEgWmNdg4IF6I2UP31c=",
+      "TemplaGroup.Web.wasm": "sha256-zUUHp3xMxpXlcMUdQS5GnUWzE2O6d2971mGL5SBzezY="
     },
     "satelliteResources": {
       "cs": {
         "Havit.Blazor.Components.Web.Bootstrap.resources.wasm": "sha256-mcFJeByR8D1wBjpBN8QQRk1GLqFFc29vgvpEC6AuKo0="
       },
       "en-US": {
-        "TemplaGroup.Core.resources.wasm": "sha256-+p8EENCnbxTB2VFuUpD+M0ceOapZTBruLtLRtcPnoJI="
+        "TemplaGroup.Core.resources.wasm": "sha256-5tVhj3PvgVXYE0uZUOboUH8uuTQRRUCV3AX+vxMpmx4="
       },
       "es-MX": {
-        "TemplaGroup.Core.resources.wasm": "sha256-pU0iPLbN9HvvplwgJKKG4lE1A3aaWzY+nX3qEEPR73Y="
+        "TemplaGroup.Core.resources.wasm": "sha256-oNWfpXCTWCB19MVF3en2Ytr7sCY9IG8wVNSJ6sD+shU="
       },
       "it-IT": {
         "Havit.Blazor.Components.Web.Bootstrap.resources.wasm": "sha256-kjc4AstxAcv89iGuSS7bmc68SAJgwYv499kJ8PT/hdI="
