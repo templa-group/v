@@ -1,19 +1,10 @@
 ﻿/* Animations */
-@import "animations/bouncing-dots.anim.css?v1.0";
+@import "animations/bouncing-dots.anim.css?v1.1";
 
 /* Animations - Wrappers */
-@import "animations/wrappers/preloader.wrapper.css?v1.0";
+@import "animations/wrappers/preloader.wrapper.css?v1.1";
 
 /* Variable Overrides */
-:root {
-    --bs-primary: var(--theme-primary);
-    --bs-primary-rgb: var(--theme-primary-rgb);
-    --bs-primary-text-emphasis: var(--theme-primary-light);
-    --bs-link-color: var(--theme-primary);
-    --bs-link-hover-color: var(--theme-primary-light);
-    --tx-input-opacity: 0.25;
-    --tx-input-opacity-disabled: 0.45;
-}
 
 /* HTML, Body */
 html, body {
@@ -33,9 +24,6 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom 0;
 }
 
 /* Glassmorphism (Background - Simple) */
@@ -93,39 +81,6 @@ html, body {
 }
 
 /* Bootstrap Classes */
-.btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: var(--theme-primary);
-    --bs-btn-border-color: var(--theme-primary);
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: var(--theme-primary-light);
-    --bs-btn-hover-border-color: var(--theme-primary);
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: var(--theme-primary);
-    --bs-btn-active-border-color: var(--theme-primary-light);
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: var(--theme-primary);
-    --bs-btn-disabled-border-color: var(--theme-primary);
-}
-
-.btn-outline-primary {
-    --bs-btn-color: var(--theme-primary);
-    --bs-btn-border-color: var(--theme-primary);
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: var(--theme-primary);
-    --bs-btn-hover-border-color: var(--theme-primary);
-    --bs-btn-focus-shadow-rgb: 13,110,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: var(--theme-primary);
-    --bs-btn-active-border-color: var(--theme-primary);
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: var(--theme-primary);
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: var(--theme-primary);
-    --bs-gradient: none;
-}
 
 /*noinspection CssNoGenericFontName*/
 .btn-no-action {
@@ -166,29 +121,6 @@ html, body {
 }
 
 /* CARDS */
-.card-header-tabs {
-    .nav-link {
-        color: var(--theme-primary-light);
-    }
-
-    /*noinspection CssUnresolvedCustomProperty*/
-    .nav-link:hover {
-        color: var(--bs-nav-tabs-link-active-color);
-        border-color: transparent;
-    }
-
-    /*noinspection CssUnresolvedCustomProperty*/
-    .nav-link.active {
-        background-color: rgba(var(--bs-body-color-rgb), 0.20);
-        border-color: transparent;
-        border-bottom-color: var(--bs-body-color-rgb);
-    }
-    
-    /*noinspection CssUnresolvedCustomProperty*/
-    .nav-link.disabled {
-        color: rgba(222, 226, 230, 0.20);
-    }
-}
 
 /*noinspection CssUnresolvedCustomProperty*/
 .selection-card {
@@ -203,45 +135,6 @@ html, body {
     border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity));
 }
 
-/*noinspection CssUnresolvedCustomProperty*/
-.form-control {
-    background: rgba(var(--bs-body-bg-rgb), var(--tx-input-opacity));
-}
-/*noinspection CssUnresolvedCustomProperty*/
-.form-control-disabled {
-    background: rgba(var(--bs-secondary-bg-rgb), var(--tx-input-opacity-disabled));
-}
-/*noinspection CssUnresolvedCustomProperty*/
-.form-control:focus {
-    background: rgba(var(--bs-body-bg-rgb), var(--tx-input-opacity));
-    border-color: var(--theme-primary-light);
-    box-shadow: 0 0 0 0.25rem rgba(var(--theme-primary-rgb), var(--tx-input-opacity));
-}
-
-/*noinspection CssUnresolvedCustomProperty*/
-.form-label {
-    color: var(--bs-body-color);
-}
-
-/*noinspection CssUnresolvedCustomProperty*/
-@-moz-document url-prefix() {
-    .form-select {
-        background-color: rgba(var(--bs-body-bg-rgb), var(--tx-input-opacity));
-    }
-    .form-select:focus {
-        background-color: rgba(var(--bs-body-bg-rgb), var(--tx-input-opacity));
-        border-color: var(--theme-primary-light);
-        box-shadow: 0 0 0 0.25rem rgba(var(--theme-primary-rgb), var(--tx-input-opacity));
-    }
-    .form-select option {
-        background-color: rgba(0, 0, 0, 0);
-    }
-}
-
-.form-check-input:checked {
-    background-color: var(--theme-primary);
-    border-color: var(--theme-primary);
-}
 
 /*noinspection CssUnresolvedCustomProperty*/
 /*.dropdown-menu {
@@ -275,16 +168,12 @@ html, body {
     background-color: transparent;
 }
 
-.help-center-offcanvas {
-    z-index: 1056 !important; /* Modal uses 1055 as z-index value */
+.tab-content { /* Full height tab content support */
+    height: 100%;
 }
 
-/* Havit Classes */
-.hx-pager {
-    --bs-pagination-active-bg: var(--theme-primary);
-    --bs-pagination-active-border-color: var(--theme-primary);
-    --bs-pagination-hover-color: var(--theme-primary-light);
-    --bs-pagination-color: var(--theme-primary);
+.help-center-offcanvas {
+    z-index: 1056 !important; /* Modal uses 1055 as z-index value */
 }
 
 /* Watermarks */

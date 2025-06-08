@@ -1,8 +1,6 @@
 ﻿/* Shared */
 /*noinspection CssUnknownTarget*/
-@import "../_content/TemplaGroup.Shared/css/theme/default.theme.css?v=1.2"; /* Change theme here */
-/*noinspection CssUnknownTarget*/
-@import "../_content/TemplaGroup.Shared/css/styles.css?v=1.5";
+@import "../_content/TemplaGroup.Shared/css/styles.css?v=1.6";
 /*noinspection CssUnknownTarget*/
 @import "../_content/TemplaGroup.Shared/TemplaGroup.Shared.bundle.scp.css?v=1.3";
 

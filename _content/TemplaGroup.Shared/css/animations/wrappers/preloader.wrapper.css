@@ -18,7 +18,7 @@
     border-radius: 0.5rem !important;
     
     background-color: rgba(33, 37, 41, 0.85);
-    box-shadow: 0 0 10px 0.25rem rgba(var(--bs-body-bg-rgb), 0.25);
+    box-shadow: 0 0 10px 0.25rem rgba(33, 37, 41, 0.25);
     -webkit-backdrop-filter: blur(10px); /* Backdrop */
     backdrop-filter: blur(10px);
     padding: 3rem !important;
