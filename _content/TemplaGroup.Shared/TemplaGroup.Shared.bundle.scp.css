@@ -93,7 +93,7 @@
     transform: translate(-50%,-50%) !important;
     width: 100%;
     height: 100%;
-    background-color: rgba(var(--bs-dark-rgb), 0.75);
+    background-color: rgba(var(--bs-body-bg-rgb), 0.75);
     -webkit-backdrop-filter: blur(10px); /* Backdrop */
     backdrop-filter: blur(10px);
 }
@@ -487,7 +487,7 @@ li.step.current[b-8jma491njq]::before {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background-color: rgba(var(--bs-dark-rgb), 0.75);
+    background-color: rgba(var(--bs-body-bg-rgb), 0.75);
     -webkit-backdrop-filter: blur(10px); /* Backdrop */
     backdrop-filter: blur(10px);
 }
