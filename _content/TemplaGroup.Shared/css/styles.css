@@ -1,0 +1,100 @@
+﻿/* Animations */
+@import "animations/bouncing-dots.anim.css?v1.1";
+
+/* Animations - Wrappers */
+@import "animations/wrappers/preloader.wrapper.css?v1.1";
+
+/* Variable Overrides */
+
+/* HTML, Body */
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* App Container */
+#app {
+    position: relative;
+    min-height: 100vh;
+}
+
+#app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Glassmorphism (Background - Simple) */
+/*noinspection CssUnresolvedCustomProperty*/
+.glassmorphism-background {
+    background-color: rgba(var(--bs-body-bg-rgb), 0.85);
+    box-shadow: 0 0 10px 0.25rem rgba(var(--bs-body-bg-rgb), 0.25);
+    
+    -webkit-backdrop-filter: blur(15px); /* Backdrop */
+    backdrop-filter: blur(15px);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.glassmorphism-background-semi-transparent {
+    background-color: rgba(var(--bs-body-bg-rgb), 0.35);
+}
+
+.glassmorphism-background-transparent {
+    background-color: transparent;
+}
+
+/* Glassmorphism (Background - Animated) */
+/*noinspection CssUnresolvedCustomProperty*/
+.glassmorphism-background-animated {
+    position: relative;
+    border-radius: var(--bs-modal-border-radius);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+}
+
+.glassmorphism-background-animated::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: calc(100% - 10px);
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(to left, #ff5770, #e4428d, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
+    background-size: 200% 200%;
+    -webkit-animation: animateGlow 3.25s linear infinite;
+    animation: animateGlow 3.25s linear infinite;
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.glassmorphism-background-animated-content {
+    background-clip: unset;
+    background-color: rgba(var(--bs-body-bg-rgb), 0.85);
+    box-shadow: 0 0 10px .25rem rgba(var(--bs-body-bg-rgb), 0.25);
+
+    -webkit-backdrop-filter: blur(25px); /* Backdrop */
+    backdrop-filter: blur(25px);
+}
+
+/* Animations */
+@-webkit-keyframes animateGlow {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+@keyframes animateGlow {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
