@@ -1,0 +1,132 @@
+/* Theme Colors */
+:root {
+    --theme-primary: #356d17;
+    --theme-primary-rgb: 53, 109, 23;
+    --theme-primary-light: #3D8A13;
+}
+
+/* Background */
+#app::before {
+    /*noinspection CssUnknownTarget*/
+    background-image: url("/_content/TemplaGroup.Shared/img/theme/christmas.svg");
+    opacity: 0.8;
+}
+
+/* Components */
+#component-template-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-15deg) translate(-20px, 10px);
+}
+
+#dialog-template-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    transform: rotate(0deg) translate(-120px,20px);
+}
+
+#dialog-template-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 30%;
+    transform: rotate(10deg) translate(10%,-35%);
+}
+
+#root-template {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root-template > #snow {
+    width: 100%;
+    object-fit: contain;
+}
+
+#sidebar-template > #santa {
+    position: absolute;
+    bottom: 110px;
+    right: 64px;
+    width: 130px;
+    height: 130px;
+    -webkit-animation: up-down-animation2 10s infinite alternate;
+    animation: up-down-animation2 3s infinite alternate;
+    z-index: -2;
+}
+
+#sidebar-template > #chimney{
+    position: absolute;
+    bottom: -75px;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    z-index: -1;
+}
+
+#tab-template > #reindeer{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 45px;
+    height: 45px;
+}
+
+#tab-template > #penguin{
+    position: absolute;
+    top: 0;
+    left: 38%;
+    width: 45px;
+    height: 45px;
+}
+
+#tab-template > #raccon{
+    position: absolute;
+    top: 0;
+    left: 51%;
+    width: 45px;
+    height: 45px;
+}
+
+#tab-template > #squirrel{
+    position: absolute;
+    top: 0;
+    left: 64%;
+    width: 45px;
+    height: 45px;
+}
+
+#tab-template > #moose{
+    position: absolute;
+    top: 0;
+    left:77%;
+    right: 10%;
+    width: 45px;
+    height: 45px;
+}
+
+#tab-template > #bear{
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: 45px;
+    height: 45px;
+}
+ /* Animations */
+@keyframes up-down-animation2 {
+    0% { transform: translateY(40%); }
+    100% { transform: translateY(-23%); }
+}

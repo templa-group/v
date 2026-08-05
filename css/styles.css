@@ -1,0 +1,140 @@
+﻿/* Shared */
+/*noinspection CssUnknownTarget*/
+@import "../_content/TemplaGroup.Shared/css/styles.css?v=1.6";
+/*noinspection CssUnknownTarget*/
+@import "../_content/TemplaGroup.Shared/TemplaGroup.Shared.bundle.scp.css?v=1.3";
+
+/*noinspection CssUnresolvedCustomProperty*/
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid var(--bs-success);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.invalid {
+    outline: 1px solid var(--bs-danger);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.validation-message {
+    color: var(--bs-danger);
+}
+
+.btn-wrap-text {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+}
+
+.fill-none {
+    fill: transparent;
+}
+
+.fill-primary {
+    fill: var(--bs-primary);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.fill-secondary {
+    fill: var(--bs-secondary);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.fill-dark {
+    fill: var(--bs-dark);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.fill.light {
+    fill: var(--bs-light);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.fill-success {
+    fill: var(--bs-success);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.fill-danger {
+    fill: var(--bs-danger);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.fill-warning {
+    fill: var(--bs-warning);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.fill-info {
+    fill: var(--bs-info);
+}
+
+/*Process*/
+/*noinspection CssUnresolvedCustomProperty*/
+.high-process {
+    background-color: var(--bs-danger);
+    color: var(--bs-white);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.cut-process {
+    background-color: #00CED1;
+    color: var(--bs-black);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.flatedge-process {
+    background-color: #FF6F61;
+    color: var(--bs-black);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.beveledge-process {
+    background-color: #E6E6FA;
+    color: var(--bs-black);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.process-process {
+    background-color: #DAA520;
+    color: var(--bs-black);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.tempered-process {
+    background-color: #DA70D6;
+    color: var(--bs-black);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.laminate-process {
+    background-color: #6A5ACD;
+    color: var(--bs-white);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.duovent-process {
+    background-color: #228B22;
+    color: var(--bs-black);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.frostedglass-process {
+    background-color: #4682B4;
+    color: var(--bs-black);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.delivery-process {
+    background-color: #FF6347;
+    color: var(--bs-white);
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.warning-border {
+    border: var(--bs-card-border-width) solid #FFFF00;
+}
+
+.warning-background {
+    background-color: #FFFF00;
+}
